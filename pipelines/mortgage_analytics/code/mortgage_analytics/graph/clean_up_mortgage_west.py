@@ -10,7 +10,7 @@ def clean_up_mortgage_west(spark: SparkSession, in0: DataFrame) -> DataFrame:
     return in0.select(
         col("Account").alias("PropID"), 
         col("City"), 
-        col("State"), 
+        initcap(col("State")).alias("State"), 
         col("`Property Type`").alias("PropertyType"), 
         col("Servicer"), 
         col("`Servicer Type`").alias("ServicerType"), 

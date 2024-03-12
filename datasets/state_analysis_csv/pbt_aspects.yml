@@ -1,0 +1,25 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: State
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: prop_count
+    type: long
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: UPB_to_Value_Ratio
+    type: double
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

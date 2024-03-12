@@ -10,7 +10,7 @@ def calculations(spark: SparkSession, in0: DataFrame) -> DataFrame:
     return in0.select(
         col("PropID"), 
         col("City"), 
-        col("State"), 
+        initcap(col("State")).alias("State"), 
         col("PropertyType"), 
         col("Servicer"), 
         col("ServicerType"), 

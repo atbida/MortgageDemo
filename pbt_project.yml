@@ -13,7 +13,25 @@ buildSystemDetails:
 pipelines:
   pipelines/mortgage_analytics:
     name: mortgage_analytics
-    description: ''
+    description: This codebase provides a set of functions for processing mortgage
+      and customer data. The `mortgage_east` and `mortgage_west` functions read in
+      mortgage data from two different regions and return DataFrames. The `clean_up_mortgage_west`
+      function cleans up the mortgage data from the west region by renaming columns
+      and converting the `LoanStatus` field to a more readable format. The `union_east_west`
+      function combines the mortgage data from both regions into a single DataFrame.
+      The `calculations` function calculates the UPB to value ratio for each mortgage.
+      The `troubled_mortgages` function filters the mortgages with a UPB to value
+      ratio greater than 1 and a loan status of 60, 90, or REO. The `avg_upb_to_value_ratio_by_state`
+      function groups the troubled mortgages by state and calculates the average UPB
+      to value ratio for each state. The `sort_by_state` function sorts the states
+      by the number of troubled mortgages. The `customers_nv` function reads in customer
+      data from Nevada and returns a DataFrame. The `all_mortgages_calc` function
+      saves all mortgage data to a Delta table. The `filter_by_state_nv` function
+      filters the mortgage data by state. The `reformat_account_num` function reformats
+      the account number field. The `mtg_asst_program` function joins the filtered
+      mortgage data with the customer data and returns a DataFrame. The `by_state_analysis`
+      function saves the state analysis to a CSV file. The `mtg_assist_prog_csv` function
+      saves the mortgage assistance program data to a CSV file.
     author: bobw@prophecy.io
     mode: batch
     artefactID: ''
@@ -21,9 +39,13 @@ pipelines:
     createdAt: '2024-03-12 18:55:42'
     datasets:
       inputs:
+      - datasets/customers_nv
       - datasets/mortgage_east
       - datasets/mortgage_west
-      outputs: []
+      outputs:
+      - datasets/myg_assist_program_csv
+      - datasets/state_analysis_csv
+      - datasets/tar_all_mortgages
     subgraphs: []
     dependencies: {}
 datasets:
@@ -53,6 +75,58 @@ datasets:
         description: ''
         author: bobw@prophecy.io
         createdAt: '2024-03-12 19:01:16'
+  datasets/tar_all_mortgages:
+    name: tar_all_mortgages
+    description: ''
+    author: bobw@prophecy.io
+    createdAt: '2024-03-12 20:17:44'
+    mode: batch
+    physicalDatasets:
+      Databricks-Prophecy:
+        fabricId: 9631
+        datasetType: Database
+        description: ''
+        author: bobw@prophecy.io
+        createdAt: '2024-03-12 20:17:44'
+  datasets/customers_nv:
+    name: customers_nv
+    description: ''
+    author: bobw@prophecy.io
+    createdAt: '2024-03-12 20:37:42'
+    mode: batch
+    physicalDatasets:
+      Databricks-Prophecy:
+        fabricId: 9631
+        datasetType: File
+        description: ''
+        author: bobw@prophecy.io
+        createdAt: '2024-03-12 20:37:42'
+  datasets/state_analysis_csv:
+    name: state_analysis_csv
+    description: ''
+    author: bobw@prophecy.io
+    createdAt: '2024-03-12 20:51:58'
+    mode: batch
+    physicalDatasets:
+      Databricks-Prophecy:
+        fabricId: 9631
+        datasetType: File
+        description: ''
+        author: bobw@prophecy.io
+        createdAt: '2024-03-12 20:51:58'
+  datasets/myg_assist_program_csv:
+    name: myg_assist_program_csv
+    description: ''
+    author: bobw@prophecy.io
+    createdAt: '2024-03-12 20:56:10'
+    mode: batch
+    physicalDatasets:
+      Databricks-Prophecy:
+        fabricId: 9631
+        datasetType: File
+        description: ''
+        author: bobw@prophecy.io
+        createdAt: '2024-03-12 20:56:10'
 templates: {}
 jobs: {}
 gemContainer:
