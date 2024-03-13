@@ -10,7 +10,7 @@ def mtg_assist_prog_csv(spark: SparkSession, in0: DataFrame):
     in0.write\
         .option("header", True)\
         .option("sep", ",")\
-        .mode("error")\
+        .mode("overwrite")\
         .option("separator", ",")\
         .option("header", True)\
         .csv("dbfs:/FileStore/bobwelshmer/mortgage/mtg_assist_program.csv")

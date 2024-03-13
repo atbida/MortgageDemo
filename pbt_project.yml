@@ -14,24 +14,21 @@ pipelines:
   pipelines/mortgage_analytics:
     name: mortgage_analytics
     description: This codebase provides a set of functions for processing mortgage
-      and customer data. The `mortgage_east` and `mortgage_west` functions read in
-      mortgage data from two different regions and return DataFrames. The `clean_up_mortgage_west`
-      function cleans up the mortgage data from the west region by renaming columns
-      and converting the `LoanStatus` field to a more readable format. The `union_east_west`
-      function combines the mortgage data from both regions into a single DataFrame.
-      The `calculations` function calculates the UPB to value ratio for each mortgage.
-      The `troubled_mortgages` function filters the mortgages with a UPB to value
-      ratio greater than 1 and a loan status of 60, 90, or REO. The `avg_upb_to_value_ratio_by_state`
-      function groups the troubled mortgages by state and calculates the average UPB
-      to value ratio for each state. The `sort_by_state` function sorts the states
-      by the number of troubled mortgages. The `customers_nv` function reads in customer
-      data from Nevada and returns a DataFrame. The `all_mortgages_calc` function
+      data. The `mortgage_east` and `mortgage_west` functions read in mortgage data
+      from two different regions. The `clean_up_mortgage_west` function cleans up
+      the data from the `mortgage_west` dataset. The `union_east_west` function combines
+      the two datasets. The `calculations` function calculates the UPB to value ratio
+      for each mortgage. The `troubled_mortgages` function filters out mortgages with
+      a UPB to value ratio greater than 1 and a loan status of 90 or REO. The `avg_upb_to_value_ratio_by_state`
+      function calculates the average UPB to value ratio for each state. The `sort_by_state`
+      function sorts the states by the number of troubled mortgages. The `nv_customers`
+      function reads in customer data from Nevada. The `all_mortgages_calc` function
       saves all mortgage data to a Delta table. The `filter_by_state_nv` function
       filters the mortgage data by state. The `reformat_account_num` function reformats
-      the account number field. The `mtg_asst_program` function joins the filtered
-      mortgage data with the customer data and returns a DataFrame. The `by_state_analysis`
-      function saves the state analysis to a CSV file. The `mtg_assist_prog_csv` function
-      saves the mortgage assistance program data to a CSV file.
+      the account number for the customer data. The `mtg_asst_program` function joins
+      the mortgage and customer data. The `by_state_analysis` function saves the state
+      analysis to a CSV file. The `mtg_assist_prog_csv` function saves the mortgage
+      assistance program data to a CSV file.
     author: bobw@prophecy.io
     mode: batch
     artefactID: ''

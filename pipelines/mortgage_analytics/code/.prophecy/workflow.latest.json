@@ -234,7 +234,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "This gem cleans up mortgage data for the western region by selecting relevant columns and renaming them for better readability. It also creates a new column called LoanStatus which categorizes loans based on their delinquency status. This could help businesses understand the current state of their mortgage portfolio and take appropriate actions to mitigate risk."
+        "comment" : "This gem cleans up mortgage data for the western region by selecting relevant columns and renaming them for better readability. It also creates a new column called LoanStatus which categorizes loans based on their delinquency status (0, 30, 60, 90, REO). This could help business users understand the current state of the loans and prioritize their efforts accordingly."
       },
       "ports" : {
         "inputs" : [ {
@@ -509,7 +509,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Current Prop Value", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##0", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##UnPaid Balance", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##City", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##60", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Property Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Servicer", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Loan Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##30", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Account", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##State", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Servicer Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##90", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##REO" ]
+        "columnsSelector" : [ "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##0", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Property Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Current Prop Value", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Servicer", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Loan Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##City", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##UnPaid Balance", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##REO", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Account", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##State", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Servicer Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##90", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##30", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##60" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -520,15 +520,15 @@
       "id" : "OCH1iiHJ1SQWHBuA31wRY$$2tmUYpYs9fep22XfBXOQn",
       "component" : "Source",
       "metadata" : {
-        "label" : "customers_nv",
-        "slug" : "customers_nv",
+        "label" : "nv_customers",
+        "slug" : "nv_customers",
         "x" : 920,
         "y" : 620,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "This gem reads in customer data from a CSV file and creates a Spark DataFrame with the specified schema. The data includes customer information such as name, gender, age, income, phone number, email address, zip code, and credit rating. This data can be used for customer segmentation, targeted marketing, and personalized customer experiences."
+        "comment" : "This gem reads in a CSV file containing customer information for a mortgage company in Nevada. It specifies the schema of the data and sets options for reading in the file. This could be used to create a dataframe of customer data for further analysis and processing."
       },
       "ports" : {
         "inputs" : [ ],
@@ -1088,7 +1088,7 @@
         } ],
         "allIn1" : null,
         "activeTab" : "expressions",
-        "columnsSelector" : [ "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropID", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##PropID", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Age", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##First_Name", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Email Address", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##Servicer", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##ServicerType", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Phone Number", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Last_Name", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Income", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##UPB_to_Value_Ratio", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##LoanStatus", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Gender", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Zip Code", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##CurrentPropValue", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##City", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##LoanType", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##UnPaidBalance", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropID", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##State", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropertyType", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Credit Rating" ],
+        "columnsSelector" : [ "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##PropID", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropID", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##ServicerType", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##First_Name", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##UnPaidBalance", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Email Address", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropID", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Phone Number", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##Servicer", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##UPB_to_Value_Ratio", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Income", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Age", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Last_Name", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropertyType", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##LoanStatus", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Gender", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##City", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Zip Code", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Credit Rating", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##State", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##LoanType", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##CurrentPropValue" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
@@ -1170,7 +1170,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "This gem reformats customer account numbers by concatenating the string \"ACCT_\" with the customer ID. This could help standardize account numbers and make them easier to work with in downstream analyses and reports. Additionally, it selects various customer attributes such as first name, last name, gender, age, income, phone number, email address, zip code, and credit rating for further analysis and personalization."
+        "comment" : "This gem reformats customer account numbers by concatenating the string \"ACCT_\" with the customer ID. This could help standardize account numbers and make them easier to read and understand for business users. Additionally, it selects various customer attributes such as name, gender, age, income, phone number, email address, zip code, and credit rating for further analysis and reporting."
       },
       "ports" : {
         "inputs" : [ {
@@ -1355,7 +1355,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Email Address", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Income", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Cust ID", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Last_Name", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Credit Rating", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Age", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Gender", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Phone Number", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##First_Name", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Zip Code" ]
+        "columnsSelector" : [ "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Gender", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Last_Name", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Phone Number", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Age", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##First_Name", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Income", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Zip Code", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Cust ID", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Credit Rating", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Email Address" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -1566,7 +1566,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##UnPaidBalance", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##PropID", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##State", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##LoanStatus", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##PropertyType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##Servicer", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##LoanType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##CurrentPropValue", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##ServicerType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##City" ]
+        "columnsSelector" : [ "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##State", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##PropertyType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##UnPaidBalance", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##LoanStatus", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##LoanType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##Servicer", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##PropID", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##ServicerType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##CurrentPropValue", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##City" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -1728,7 +1728,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "This gem filters mortgage data to identify troubled mortgages based on a UPB to Value Ratio greater than 1 and LoanStatus values of 60, 90, or REO. This could help lenders identify high-risk mortgages and take appropriate actions to mitigate potential losses."
+        "comment" : "This gem filters mortgage data to identify troubled mortgages based on a UPB to Value Ratio greater than 1 and a LoanStatus of either 90 or REO. This could help businesses identify high-risk mortgages and take appropriate actions to mitigate potential losses."
       },
       "ports" : {
         "inputs" : [ {
@@ -1851,7 +1851,7 @@
         "columnsSelector" : [ "m6x1XVlcTpONq5WjOM0Bp$$aXSKyDewXHXD475Z2IWZ9##UPB_to_Value_Ratio", "m6x1XVlcTpONq5WjOM0Bp$$aXSKyDewXHXD475Z2IWZ9##LoanStatus" ],
         "condition" : {
           "format" : "sql",
-          "expression" : "UPB_to_Value_Ratio>1 AND LoanStatus IN (\"60\",\"90\",\"REO\")"
+          "expression" : "UPB_to_Value_Ratio>1 AND LoanStatus IN (\"90\",\"REO\")"
         }
       },
       "componentInfo" : {
@@ -2100,7 +2100,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "This gem writes the input DataFrame to a CSV file in the specified location with the given options. This could be useful for exporting data to be used in other applications or for backup purposes."
+        "comment" : "This gem writes the input DataFrame to a CSV file with specified options such as header, separator, and overwrite mode. The resulting CSV file can be used for further analysis or shared with other teams or stakeholders."
       },
       "ports" : {
         "inputs" : [ {
@@ -2456,7 +2456,7 @@
         "pivotColumn" : null,
         "pivotValues" : [ ],
         "activeTab" : "aggregate",
-        "columnsSelector" : [ "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##PropID", "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##State", "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##UPB_to_Value_Ratio" ],
+        "columnsSelector" : [ "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##PropID", "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##UPB_to_Value_Ratio", "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##State" ],
         "groupBy" : [ {
           "target" : "State",
           "expression" : {
@@ -2512,7 +2512,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "This gem reads in a CSV file containing mortgage data for the western region of the United States. It specifies the schema of the data and sets options for reading in the file. This data could be used for analysis and modeling to understand mortgage trends and patterns in the western region."
+        "comment" : "This gem reads in a CSV file containing mortgage data for the western region of the United States. It specifies the schema of the data and sets options for reading in the file. This could be used to load and analyze mortgage data for the western region, providing insights into the housing market and economic trends in the area."
       },
       "ports" : {
         "inputs" : [ ],
