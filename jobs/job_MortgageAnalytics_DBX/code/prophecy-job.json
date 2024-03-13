@@ -1,0 +1,148 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "9631",
+    "jobId" : "jobs/job_MortgageAnalytics_DBX",
+    "name" : "job_MortgageAnalytics_DBX",
+    "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "9631",
+      "name" : "Databricks-Prophecy",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "9851",
+      "name" : "workshop-fabric",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    } ]
+  },
+  "processes" : {
+    "zHjf_Lei8kZ-0x-cJ2y5S$$wxhA6HHncK2SQ-E1_-0F7" : {
+      "id" : "zHjf_Lei8kZ-0x-cJ2y5S$$wxhA6HHncK2SQ-E1_-0F7",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "mortgage_analytics",
+        "slug" : "mortgage_analytics",
+        "x" : -322.79998779296875,
+        "y" : -123
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "g5buRQ6_x2MKixJvJMIZH$$Ia6SUVUiJt4I3b5jGr0tg",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "eiY2h2dBEwmOZoWcxHXow$$MkGpEj1DH2Vd5VrmWJzxi",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/mortgage_analytics",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : {
+            "MortgageAnalytics" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    },
+    "05LqM6iMV1Dx6Zga89KAo$$nBLAXrkjI8EEWbBbulBsB" : {
+      "id" : "05LqM6iMV1Dx6Zga89KAo$$nBLAXrkjI8EEWbBbulBsB",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "troubled_mortgage_HAF",
+        "slug" : "troubled_mortgage_HAF",
+        "x" : -160,
+        "y" : -120
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "-t29xplZU1470lg0MGwkv$$4BUI2KYZySrA9ez4d44Bg",
+          "slug" : "mortgage_analytics"
+        } ],
+        "outputs" : [ {
+          "id" : "tIqpzwvR3YfGrVxRjZudR$$CEP22iNRYm8EV_FC6C6Ma",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/troubled_mortgage_assistance",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : {
+            "MortgageAnalytics" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "8YQNYnwIYpm-MJx01YzBm$$NuTvnX1pJdiYUEpO-fO0H",
+    "source" : "zHjf_Lei8kZ-0x-cJ2y5S$$wxhA6HHncK2SQ-E1_-0F7",
+    "target" : "05LqM6iMV1Dx6Zga89KAo$$nBLAXrkjI8EEWbBbulBsB",
+    "sourcePort" : "eiY2h2dBEwmOZoWcxHXow$$MkGpEj1DH2Vd5VrmWJzxi",
+    "targetPort" : "-t29xplZU1470lg0MGwkv$$4BUI2KYZySrA9ez4d44Bg"
+  } ]
+}

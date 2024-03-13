@@ -1,0 +1,137 @@
+{
+  "metainfo" : {
+    "type" : "Prophecy",
+    "fabricId" : "9770",
+    "jobId" : "jobs/job_MortgageAnalytics_AF",
+    "name" : "job_MortgageAnalytics_AF",
+    "dagName" : "_E5BJiL_5rAGW3NpQzrLug_",
+    "schedule" : "0 0 * * *",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "pool" : "P1Mfmhdo",
+      "do_xcom_push" : true
+    },
+    "availableFabrics" : [ {
+      "id" : "9770",
+      "name" : "Airflow",
+      "trialStartDate" : 1708458382170
+    } ],
+    "endDate" : "2024-03-13",
+    "catchup" : true,
+    "startDate" : "2024-03-13",
+    "tags" : [ ],
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false
+    }
+  },
+  "processes" : {
+    "b-MDkxl6DMep6wTz1Wci2$$La6MzI6hJAC2_DrKIFMf9" : {
+      "id" : "b-MDkxl6DMep6wTz1Wci2$$La6MzI6hJAC2_DrKIFMf9",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "mortgage_analytics",
+        "slug" : "mortgage_analytics",
+        "x" : -240,
+        "y" : -60
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "CobArhrJ2W1-TpXdUhJdX$$cWkwS0ceWo5beezz1vUfo",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "PotAog7C3rryYJsczbTK1$$1TgwxyUYGh5iSgUIeTgc4",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "runJson" : null,
+        "databricksConnId" : "",
+        "clusterSize" : "9631/small",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : {
+            "MortgageAnalytics" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        },
+        "taskId" : null,
+        "pipelineId" : {
+          "type" : "literal",
+          "value" : "pipelines/mortgage_analytics"
+        }
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "XVqy1K2ZpXoUAmDAgW_ey$$7ZBXrq2t6iu8IpfVOU3m2" : {
+      "id" : "XVqy1K2ZpXoUAmDAgW_ey$$7ZBXrq2t6iu8IpfVOU3m2",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "troubled_mortgage_HAF",
+        "slug" : "troubled_mortgage_HAF",
+        "x" : -100,
+        "y" : -60
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "kSWkBJXmU6tUXQ-ch5KGs$$gJB1lfWCSdp70rcDGAZ_r",
+          "slug" : "mortgage_analytics"
+        } ],
+        "outputs" : [ {
+          "id" : "HhEw6hJrBJXlQQf3kogUF$$ZUAf-zlpur_n2GoRmmhra",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "runJson" : null,
+        "databricksConnId" : "",
+        "clusterSize" : "9631/small",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : {
+            "MortgageAnalytics" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        },
+        "taskId" : null,
+        "pipelineId" : {
+          "type" : "literal",
+          "value" : "pipelines/troubled_mortgage_assistance"
+        }
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ {
+    "id" : "2Z1GkaftM1AcPIPq5ALNt$$wre8UiA8tSb9muVK5P3LB",
+    "source" : "b-MDkxl6DMep6wTz1Wci2$$La6MzI6hJAC2_DrKIFMf9",
+    "target" : "XVqy1K2ZpXoUAmDAgW_ey$$7ZBXrq2t6iu8IpfVOU3m2",
+    "sourcePort" : "PotAog7C3rryYJsczbTK1$$1TgwxyUYGh5iSgUIeTgc4",
+    "targetPort" : "kSWkBJXmU6tUXQ-ch5KGs$$gJB1lfWCSdp70rcDGAZ_r"
+  } ]
+}
