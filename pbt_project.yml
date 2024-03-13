@@ -13,22 +13,12 @@ buildSystemDetails:
 pipelines:
   pipelines/mortgage_analytics:
     name: mortgage_analytics
-    description: This codebase provides a set of functions for processing mortgage
-      data. The `mortgage_east` and `mortgage_west` functions read in mortgage data
-      from two different regions. The `clean_up_mortgage_west` function cleans up
-      the data from the `mortgage_west` dataset. The `union_east_west` function combines
-      the two datasets. The `calculations` function calculates the UPB to value ratio
-      for each mortgage. The `troubled_mortgages` function filters out mortgages with
-      a UPB to value ratio greater than 1 and a loan status of 90 or REO. The `avg_upb_to_value_ratio_by_state`
-      function calculates the average UPB to value ratio for each state. The `sort_by_state`
-      function sorts the states by the number of troubled mortgages. The `nv_customers`
-      function reads in customer data from Nevada. The `all_mortgages_calc` function
-      saves all mortgage data to a Delta table. The `filter_by_state_nv` function
-      filters the mortgage data by state. The `reformat_account_num` function reformats
-      the account number for the customer data. The `mtg_asst_program` function joins
-      the mortgage and customer data. The `by_state_analysis` function saves the state
-      analysis to a CSV file. The `mtg_assist_prog_csv` function saves the mortgage
-      assistance program data to a CSV file.
+    description: This codebase provides a mortgage analysis pipeline that processes
+      data from two CSV files, MortgageEast.csv and MortgageWest.csv. The data is
+      cleaned and merged, and then various calculations are performed to identify
+      troubled mortgages. The troubled mortgages are then aggregated by state and
+      sorted by the number of properties in trouble. Finally, the results are saved
+      to a Delta table and a CSV file for further analysis and reporting.
     author: bobw@prophecy.io
     mode: batch
     artefactID: ''
@@ -36,13 +26,36 @@ pipelines:
     createdAt: '2024-03-12 18:55:42'
     datasets:
       inputs:
-      - datasets/customers_nv
       - datasets/mortgage_east
       - datasets/mortgage_west
       outputs:
-      - datasets/myg_assist_program_csv
       - datasets/state_analysis_csv
       - datasets/tar_all_mortgages
+      - datasets/tar_troubled_mortgages
+    subgraphs: []
+    dependencies: {}
+  pipelines/troubled_mortgage_assistance:
+    name: troubled_mortgage_HAF
+    description: This codebase provides a mortgage assistance program that helps identify
+      troubled mortgages in Nevada and provides assistance to customers. It reads
+      in data from two sources, the `troubled_mortgages` table and the `MortgageCustomerNV.csv`
+      file, and filters the customer data to only include those in Nevada. It then
+      reformats the account number and joins the customer data with the mortgage data
+      to create a comprehensive view of the customer's mortgage information. Finally,
+      it writes the output to a CSV file named `mtg_assist_program.csv`. This program
+      could be used by mortgage companies to identify and assist customers who are
+      struggling with their mortgage payments.
+    author: bobw@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-03-13 14:45:58'
+    datasets:
+      inputs:
+      - datasets/customers_nv
+      - datasets/tar_troubled_mortgages
+      outputs:
+      - datasets/myg_assist_program_csv
     subgraphs: []
     dependencies: {}
 datasets:
@@ -124,6 +137,19 @@ datasets:
         description: ''
         author: bobw@prophecy.io
         createdAt: '2024-03-12 20:56:10'
+  datasets/tar_troubled_mortgages:
+    name: tar_troubled_mortgages
+    description: ''
+    author: bobw@prophecy.io
+    createdAt: '2024-03-13 14:49:32'
+    mode: batch
+    physicalDatasets:
+      Databricks-Prophecy:
+        fabricId: 9631
+        datasetType: Database
+        description: ''
+        author: bobw@prophecy.io
+        createdAt: '2024-03-13 14:49:32'
 templates: {}
 jobs: {}
 gemContainer:

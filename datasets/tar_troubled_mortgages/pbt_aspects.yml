@@ -1,0 +1,108 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: PropID
+    type: string
+    nullable: true
+    metadata:
+      description: Unique identifier for each property in the dataset. It stores alphanumeric
+        values in string data type, providing a way to uniquely identify each property
+        in the dataset.
+      mappings: []
+      tags: []
+  - name: City
+    type: string
+    nullable: true
+    metadata:
+      description: The name of the city where the property is located. This column
+        stores values of string data type and provides information about the geographical
+        location of the property.
+      mappings: []
+      tags: []
+  - name: State
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: PropertyType
+    type: string
+    nullable: true
+    metadata:
+      description: Specifies the type of property associated with each mortgage. It
+        stores values of string data type, indicating whether the property is a single-family
+        home, multi-family home, condominium, or other type of property. This column
+        provides important information about the characteristics of the properties
+        associated with each mortgage.
+      mappings: []
+      tags: []
+  - name: Servicer
+    type: string
+    nullable: true
+    metadata:
+      description: The name of the company or organization that services the mortgage
+        loan. This column stores string values and provides information about the
+        entity responsible for managing the loan payments and other related activities.
+      mappings: []
+      tags: []
+  - name: ServicerType
+    type: string
+    nullable: true
+    metadata:
+      description: Indicates the type of servicer responsible for managing the mortgage
+        loan. The values in this column are of string data type and provide information
+        about the organization or entity responsible for servicing the loan, such
+        as a bank or mortgage company. This column can be used to track the performance
+        of different types of servicers and their impact on loan status and other
+        metrics.
+      mappings: []
+      tags: []
+  - name: LoanType
+    type: string
+    nullable: true
+    metadata:
+      description: Specifies the type of loan associated with each property. It stores
+        values of string data type, indicating the type of loan taken by the property
+        owner. This column provides information about the terms and conditions of
+        the loan, such as interest rates and payment schedules.
+      mappings: []
+      tags: []
+  - name: UnPaidBalance
+    type: double
+    nullable: true
+    metadata:
+      description: The outstanding balance on the mortgage loan for a particular property.
+        This column stores numerical values in double data type, indicating the amount
+        of money that the borrower still owes on their mortgage loan. It is an important
+        metric for lenders to assess the risk associated with a particular loan.
+      mappings: []
+      tags: []
+  - name: CurrentPropValue
+    type: double
+    nullable: true
+    metadata:
+      description: The current market value of the property associated with the mortgage.
+        This column stores numerical values in double data type, indicating the estimated
+        worth of the property at the time of data collection. It provides an insight
+        into the value of the property and its potential for generating revenue.
+      mappings: []
+      tags: []
+  - name: LoanStatus
+    type: string
+    nullable: true
+    metadata:
+      description: Indicates the current status of the loan associated with the property.
+        The values in this column are of string data type and provide information
+        on whether the loan is in good standing, delinquent, or in default. This column
+        is important for tracking the overall health of the mortgage portfolio.
+      mappings: []
+      tags: []
+  - name: UPB_to_Value_Ratio
+    type: double
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

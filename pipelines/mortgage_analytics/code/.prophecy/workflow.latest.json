@@ -111,41 +111,17 @@
     "target" : "BZX62pq8yvJwIBIgbHSb8$$iF9TZK2cLuau6729CqEoZ",
     "targetPort" : "KP-wptQOdFsIhNQC2jgCb$$a8yvtL07Dvb0DKaf4_CZA"
   }, {
-    "id" : "ciODGXqUcPKzq0-vxFpYl",
-    "source" : "Xac5yWT3TYIwYSO-z0gkP$$2r2d29Sz5-lOdc_byv7DO",
-    "sourcePort" : "LuraPjlDoh4L3vy7OronX$$iPXh4ldDVWY5z2ehZhwi6",
-    "target" : "5rYLIPuYdPwhnsTnYvQqY$$qr-hEEqmlp-bkGYgFSteH",
-    "targetPort" : "sFGbes2XYQU-rQ9T9KIzS$$OPoPvUav8bWnaEJ_JJ8c7"
-  }, {
-    "id" : "yOl82ftfQtTunjvjaXkzC$$_YpsAKN6p-SvoDGvhMZYG",
-    "source" : "OCH1iiHJ1SQWHBuA31wRY$$2tmUYpYs9fep22XfBXOQn",
-    "sourcePort" : "QKhkKTTn1WgBVh1pqOmY6$$rLn0VKaPKOsVTyWMScfFi",
-    "target" : "jCQEsS9msA3bbt9-eFKUH$$9AbKVqy0tUnVw8yMYvzM_",
-    "targetPort" : "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4"
-  }, {
-    "id" : "o9G8coLthRGmfkWgQmQut$$IkGUBTal4IglqPY8lKOgR",
-    "source" : "5rYLIPuYdPwhnsTnYvQqY$$qr-hEEqmlp-bkGYgFSteH",
-    "sourcePort" : "UJvxmOmVvEUvmoiSagclV$$b7cQvbvhHV8_KqqE_gtIM",
-    "target" : "yApcwPxlKgtNRJZVrIFdB$$et5_NdiULVbMRwP5gA2PP",
-    "targetPort" : "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o"
-  }, {
-    "id" : "_3MUG69skmXOA8vGuTx_2$$QokPi43stwx98rPUmNWgi",
-    "source" : "jCQEsS9msA3bbt9-eFKUH$$9AbKVqy0tUnVw8yMYvzM_",
-    "sourcePort" : "30GjxEj2kH-0yQ8ZC1tsb$$23CgT3CjMbdAqfMsYJpE3",
-    "target" : "yApcwPxlKgtNRJZVrIFdB$$et5_NdiULVbMRwP5gA2PP",
-    "targetPort" : "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX"
-  }, {
     "id" : "MWn6mmL8YW1nmF-d6saSO$$PKkTwDDP4hXwljWZzgh5b",
     "source" : "BZX62pq8yvJwIBIgbHSb8$$iF9TZK2cLuau6729CqEoZ",
     "sourcePort" : "LzVVQnSuK-kjt2WL-25qb$$zGk2d77M0HDEGF8LZrI7d",
     "target" : "hOXppsb1yhNdDEvHddY5q$$gGXPXzbmLGwEMUmO3gToo",
     "targetPort" : "_KnDRMCrhD5B_hg7PK9e1$$CkimCwsNNOcllk3Ubefoe"
   }, {
-    "id" : "W_NYBErIOhKJi1nQOoJfF$$h5mcbiTFKM3j2qrfcKnsa",
-    "source" : "yApcwPxlKgtNRJZVrIFdB$$et5_NdiULVbMRwP5gA2PP",
-    "sourcePort" : "yIwH0j2hyDsFFut2t3iDU$$_N5l1mmMewtNfwETZYlVz",
-    "target" : "WuoCheKCfhwDB4lmKbFwv$$ktlxlgOPHQTXIiwe7-jpH",
-    "targetPort" : "Vf7w1eUr_O4TjRLUr-PGa$$Nz9bs_lY-pFUB1-FqclSc"
+    "id" : "2teJBDm0CMPJynN9iMzCm",
+    "source" : "Xac5yWT3TYIwYSO-z0gkP$$2r2d29Sz5-lOdc_byv7DO",
+    "sourcePort" : "LuraPjlDoh4L3vy7OronX$$iPXh4ldDVWY5z2ehZhwi6",
+    "target" : "2gL1LRLfPj0GCASqLZrff$$6t2dXNLZdNJk_ubxuhmNU",
+    "targetPort" : "gqPsNtlV07txa56ZxrjmN$$lJMgVXGVN0vNp52I4Q83z"
   } ],
   "processes" : {
     "BZX62pq8yvJwIBIgbHSb8$$iF9TZK2cLuau6729CqEoZ" : {
@@ -509,54 +485,26 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##0", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Property Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Current Prop Value", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Servicer", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Loan Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##City", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##UnPaid Balance", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##REO", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Account", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##State", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Servicer Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##90", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##30", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##60" ]
+        "columnsSelector" : [ "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##City", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##30", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##90", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##0", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##UnPaid Balance", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##REO", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##60", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Current Prop Value", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Servicer", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Property Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##State", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Account", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Servicer Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Loan Type" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
-    "OCH1iiHJ1SQWHBuA31wRY$$2tmUYpYs9fep22XfBXOQn" : {
-      "id" : "OCH1iiHJ1SQWHBuA31wRY$$2tmUYpYs9fep22XfBXOQn",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "nv_customers",
-        "slug" : "nv_customers",
-        "x" : 920,
-        "y" : 620,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "This gem reads in a CSV file containing customer information for a mortgage company in Nevada. It specifies the schema of the data and sets options for reading in the file. This could be used to create a dataframe of customer data for further analysis and processing."
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "QKhkKTTn1WgBVh1pqOmY6$$rLn0VKaPKOsVTyWMScfFi",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/customers_nv"
-      }
-    },
     "BTIAO4TE3ms-mY3Hm2i6X$$WqSCbssnK4tNct2DQixoG" : {
       "id" : "BTIAO4TE3ms-mY3Hm2i6X$$WqSCbssnK4tNct2DQixoG",
       "component" : "Target",
       "metadata" : {
-        "label" : "all_mortgages_calc",
-        "slug" : "all_mortgages_calc",
+        "label" : "tbl_all_mortgages",
+        "slug" : "tbl_all_mortgages",
         "x" : 920,
         "y" : 420,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "This gem saves the input DataFrame as a Delta table in the specified database and table. This could be useful for data persistence and sharing across different applications and users."
+        "comment" : "This gem saves the input DataFrame as a Delta table named \"mortgages_all\" in the \"mortgage_demo\" database under the \"bobwelshmer\" user. This could be useful for data persistence and sharing across different Spark applications or for querying the data using SQL."
       },
       "ports" : {
         "inputs" : [ {
@@ -676,23 +624,23 @@
         "datasetId" : "datasets/tar_all_mortgages"
       }
     },
-    "yApcwPxlKgtNRJZVrIFdB$$et5_NdiULVbMRwP5gA2PP" : {
-      "id" : "yApcwPxlKgtNRJZVrIFdB$$et5_NdiULVbMRwP5gA2PP",
-      "component" : "Join",
+    "2gL1LRLfPj0GCASqLZrff$$6t2dXNLZdNJk_ubxuhmNU" : {
+      "id" : "2gL1LRLfPj0GCASqLZrff$$6t2dXNLZdNJk_ubxuhmNU",
+      "component" : "Target",
       "metadata" : {
-        "label" : "mtg_asst_program",
-        "slug" : "mtg_asst_program",
-        "x" : 1320,
-        "y" : 520,
+        "label" : "tbl_troubled_mortgages",
+        "slug" : "tbl_troubled_mortgages",
+        "x" : 1140,
+        "y" : 300,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "This gem merges property and customer data based on the PropID identifier to provide a comprehensive view of the property and its owner. It includes information such as the owner's name, gender, age, income, contact details, credit rating, and the property's type, servicer, loan type, unpaid balance, current property value, loan status, and UPB to value ratio. This can be used for property valuation, risk assessment, and customer segmentation."
+        "comment" : "This gem saves the input DataFrame as a Delta table named \"troubled_mortgages\" in the \"mortgage_demo\" database under the \"bobwelshmer\" user. This could be used for data persistence and sharing across different Spark applications or for downstream analytics and reporting."
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o",
+          "id" : "gqPsNtlV07txa56ZxrjmN$$lJMgVXGVN0vNp52I4Q83z",
           "slug" : "in0",
           "schema" : {
             "type" : "struct",
@@ -798,319 +746,29 @@
             } ]
           },
           "isStreaming" : false
-        }, {
-          "id" : "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX",
-          "slug" : "in1",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "PropID",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "First_Name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The first name of each customer is stored in this column. It stores values of string data type and provides a way to identify each customer by their first name.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Last_Name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Stores the last name of each customer. The values in this column are of string data type and provide a way to identify customers based on their family name. This column is part of the customers_nv dataset schema.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Gender",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Indicates the gender of each customer. It stores values of string data type, either 'Male' or 'Female', providing a way to categorize customers based on their gender.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Age",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Age of the customer in years. It stores numerical values in string data type, indicating the age of each customer. This column provides information about the age distribution of customers in the dataset.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Income",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "This column represents the income of each customer. It stores numerical values in string data type, indicating the estimated income of individual customers. This information can be used to segment customers based on their purchasing power and target them with appropriate marketing strategies.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Phone Number",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Stores the phone number of each customer. The values in this column are of string data type and provide a way to contact each customer. It is important to note that this column may contain different formats of phone numbers, such as with or without country codes or dashes.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Email Address",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Stores the email address of each customer. It is a string data type column that contains unique email addresses for each customer. This column can be used to communicate with customers and send promotional emails or newsletters.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Zip Code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The postal code of the customer's address. It stores a string value that represents the zip code of the customer's location. This column can be used to group customers by their geographical location.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Credit Rating",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Credit rating of each customer. It stores a string value indicating the creditworthiness of each customer. The values in this column can range from poor to excellent, and are used to assess the risk associated with lending money to each customer.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
         } ],
-        "outputs" : [ {
-          "id" : "yIwH0j2hyDsFFut2t3iDU$$_N5l1mmMewtNfwETZYlVz",
-          "slug" : "out"
-        } ],
+        "outputs" : [ ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "conditions" : [ {
-          "alias" : "in1",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.PropID=in1.PropID"
-          },
-          "joinType" : "inner"
-        } ],
-        "expressions" : [ {
-          "target" : "PropID",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.PropID"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "First_Name",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.First_Name"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Last_Name",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.Last_Name"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Gender",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.Gender"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Age",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.Age"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Income",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.Income"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Phone Number",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.`Phone Number`"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Email Address",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.`Email Address`"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "City",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.City"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "State",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.State"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Zip Code",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.`Zip Code`"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Credit Rating",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.`Credit Rating`"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "PropertyType",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.PropertyType"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Servicer",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.Servicer"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "ServicerType",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.ServicerType"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "LoanType",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.LoanType"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "UnPaidBalance",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.UnPaidBalance"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "CurrentPropValue",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.CurrentPropValue"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "LoanStatus",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.LoanStatus"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "UPB_to_Value_Ratio",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.UPB_to_Value_Ratio"
-          },
-          "description" : "",
-          "_row_id" : null
-        } ],
-        "hints" : [ {
-          "id" : "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o",
-          "alias" : "in0",
-          "hintType" : "none",
-          "propagateColumns" : false
-        }, {
-          "id" : "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX",
-          "alias" : "in1",
-          "hintType" : "none",
-          "propagateColumns" : false
-        } ],
-        "allIn1" : null,
-        "activeTab" : "expressions",
-        "columnsSelector" : [ "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##PropID", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropID", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##ServicerType", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##First_Name", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##UnPaidBalance", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Email Address", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropID", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Phone Number", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##Servicer", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##UPB_to_Value_Ratio", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Income", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Age", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Last_Name", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropertyType", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##LoanStatus", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Gender", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##City", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Zip Code", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Credit Rating", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##State", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##LoanType", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##CurrentPropValue" ],
-        "allIn0" : null,
-        "whereClause" : null,
-        "headAlias" : "in0"
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Join",
-        "projectName" : "ProphecySparkBasicsPython"
+        "datasetId" : "datasets/tar_troubled_mortgages"
       }
     },
     "hOXppsb1yhNdDEvHddY5q$$gGXPXzbmLGwEMUmO3gToo" : {
       "id" : "hOXppsb1yhNdDEvHddY5q$$gGXPXzbmLGwEMUmO3gToo",
       "component" : "Target",
       "metadata" : {
-        "label" : "by_state_analysis",
-        "slug" : "by_state_analysis",
+        "label" : "csv_by_state_analysis",
+        "slug" : "csv_by_state_analysis",
         "x" : 1520,
         "y" : 120,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "This gem writes the mortgage data to a CSV file in the specified location with the specified options. This could be used to export the data for further analysis or reporting outside of the Spark environment."
+        "comment" : "This gem writes the input DataFrame to a CSV file with headers and a comma separator. The output file is saved to a specific location in the Databricks File System (DBFS) and overwrites any existing file with the same name. This could be useful for exporting data for further analysis or sharing with other teams or stakeholders."
       },
       "ports" : {
         "inputs" : [ {
@@ -1156,210 +814,6 @@
       },
       "properties" : {
         "datasetId" : "datasets/state_analysis_csv"
-      }
-    },
-    "jCQEsS9msA3bbt9-eFKUH$$9AbKVqy0tUnVw8yMYvzM_" : {
-      "id" : "jCQEsS9msA3bbt9-eFKUH$$9AbKVqy0tUnVw8yMYvzM_",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "reformat_account_num",
-        "slug" : "reformat_account_num",
-        "x" : 1120,
-        "y" : 620,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "This gem reformats customer account numbers by concatenating the string \"ACCT_\" with the customer ID. This could help standardize account numbers and make them easier to read and understand for business users. Additionally, it selects various customer attributes such as name, gender, age, income, phone number, email address, zip code, and credit rating for further analysis and reporting."
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "Cust ID",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Unique identifier for each customer in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each customer in the dataset.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "First_Name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The first name of each customer is stored in this column. It stores values of string data type and provides a way to identify each customer by their first name.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Last_Name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Stores the last name of each customer. The values in this column are of string data type and provide a way to identify customers based on their family name. This column is part of the customers_nv dataset schema.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Gender",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Indicates the gender of each customer. It stores values of string data type, either 'Male' or 'Female', providing a way to categorize customers based on their gender.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Age",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Age of the customer in years. It stores numerical values in string data type, indicating the age of each customer. This column provides information about the age distribution of customers in the dataset.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Income",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "This column represents the income of each customer. It stores numerical values in string data type, indicating the estimated income of individual customers. This information can be used to segment customers based on their purchasing power and target them with appropriate marketing strategies.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Phone Number",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Stores the phone number of each customer. The values in this column are of string data type and provide a way to contact each customer. It is important to note that this column may contain different formats of phone numbers, such as with or without country codes or dashes.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Email Address",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Stores the email address of each customer. It is a string data type column that contains unique email addresses for each customer. This column can be used to communicate with customers and send promotional emails or newsletters.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Zip Code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The postal code of the customer's address. It stores a string value that represents the zip code of the customer's location. This column can be used to group customers by their geographical location.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Credit Rating",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Credit rating of each customer. It stores a string value indicating the creditworthiness of each customer. The values in this column can range from poor to excellent, and are used to assess the risk associated with lending money to each customer.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ {
-          "id" : "30GjxEj2kH-0yQ8ZC1tsb$$23CgT3CjMbdAqfMsYJpE3",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
-        "expressions" : [ {
-          "target" : "PropID",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "concat(\"ACCT_\",`Cust ID` )"
-          },
-          "description" : ""
-        }, {
-          "target" : "First_Name",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "First_Name"
-          },
-          "description" : ""
-        }, {
-          "target" : "Last_Name",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Last_Name"
-          },
-          "description" : ""
-        }, {
-          "target" : "Gender",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Gender"
-          },
-          "description" : ""
-        }, {
-          "target" : "Age",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Age"
-          },
-          "description" : ""
-        }, {
-          "target" : "Income",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Income"
-          },
-          "description" : ""
-        }, {
-          "target" : "`Phone Number`",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "`Phone Number`"
-          },
-          "description" : ""
-        }, {
-          "target" : "`Email Address`",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "`Email Address`"
-          },
-          "description" : ""
-        }, {
-          "target" : "`Zip Code`",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "`Zip Code`"
-          },
-          "description" : ""
-        }, {
-          "target" : "`Credit Rating`",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "`Credit Rating`"
-          },
-          "description" : ""
-        } ],
-        "importString" : "",
-        "activeTab" : "expressions",
-        "columnsSelector" : [ "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Gender", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Last_Name", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Phone Number", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Age", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##First_Name", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Income", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Zip Code", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Cust ID", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Credit Rating", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Email Address" ]
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Reformat",
-        "projectName" : "ProphecySparkBasicsPython"
       }
     },
     "J4KACe_tc8QAvbktuvrHE$$gJWKp5QW9QFbf6RvDhewp" : {
@@ -1566,153 +1020,10 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##State", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##PropertyType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##UnPaidBalance", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##LoanStatus", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##LoanType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##Servicer", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##PropID", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##ServicerType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##CurrentPropValue", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##City" ]
+        "columnsSelector" : [ "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##ServicerType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##LoanStatus", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##CurrentPropValue", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##PropID", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##LoanType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##Servicer", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##City", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##PropertyType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##State", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##UnPaidBalance" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Reformat",
-        "projectName" : "ProphecySparkBasicsPython"
-      }
-    },
-    "5rYLIPuYdPwhnsTnYvQqY$$qr-hEEqmlp-bkGYgFSteH" : {
-      "id" : "5rYLIPuYdPwhnsTnYvQqY$$qr-hEEqmlp-bkGYgFSteH",
-      "component" : "Filter",
-      "metadata" : {
-        "label" : "filter_by_state_nv",
-        "slug" : "filter_by_state_nv",
-        "x" : 1120,
-        "y" : 320,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "This gem filters customer data to only include records where the state field is equal to \"Nv\". This could be useful for analyzing customer behaviour and preferences specific to the state of Nevada."
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "sFGbes2XYQU-rQ9T9KIzS$$OPoPvUav8bWnaEJ_JJ8c7",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "PropID",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Unique identifier for each property in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each property in the dataset.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "City",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The name of the city where the property is located. This column stores values of string data type and provides information about the geographical location of the property.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "State",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "PropertyType",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Specifies the type of property associated with each mortgage. It stores values of string data type, indicating whether the property is a single-family home, multi-family home, condominium, or other type of property. This column provides important information about the characteristics of the properties associated with each mortgage.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Servicer",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The name of the company or organization that services the mortgage loan. This column stores string values and provides information about the entity responsible for managing the loan payments and other related activities.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "ServicerType",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Indicates the type of servicer responsible for managing the mortgage loan. The values in this column are of string data type and provide information about the organization or entity responsible for servicing the loan, such as a bank or mortgage company. This column can be used to track the performance of different types of servicers and their impact on loan status and other metrics.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "LoanType",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Specifies the type of loan associated with each property. It stores values of string data type, indicating the type of loan taken by the property owner. This column provides information about the terms and conditions of the loan, such as interest rates and payment schedules.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "UnPaidBalance",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The outstanding balance on the mortgage loan for a particular property. This column stores numerical values in double data type, indicating the amount of money that the borrower still owes on their mortgage loan. It is an important metric for lenders to assess the risk associated with a particular loan.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "CurrentPropValue",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The current market value of the property associated with the mortgage. This column stores numerical values in double data type, indicating the estimated worth of the property at the time of data collection. It provides an insight into the value of the property and its potential for generating revenue.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "LoanStatus",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Indicates the current status of the loan associated with the property. The values in this column are of string data type and provide information on whether the loan is in good standing, delinquent, or in default. This column is important for tracking the overall health of the mortgage portfolio.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "UPB_to_Value_Ratio",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ {
-          "id" : "UJvxmOmVvEUvmoiSagclV$$b7cQvbvhHV8_KqqE_gtIM",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "columnsSelector" : [ "sFGbes2XYQU-rQ9T9KIzS$$OPoPvUav8bWnaEJ_JJ8c7##State" ],
-        "condition" : {
-          "format" : "sql",
-          "expression" : "state=\"Nv\""
-        }
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Filter",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -2088,219 +1399,6 @@
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
-    "WuoCheKCfhwDB4lmKbFwv$$ktlxlgOPHQTXIiwe7-jpH" : {
-      "id" : "WuoCheKCfhwDB4lmKbFwv$$ktlxlgOPHQTXIiwe7-jpH",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "mtg_assist_prog_csv",
-        "slug" : "mtg_assist_prog_csv",
-        "x" : 1520,
-        "y" : 520,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "This gem writes the input DataFrame to a CSV file with specified options such as header, separator, and overwrite mode. The resulting CSV file can be used for further analysis or shared with other teams or stakeholders."
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "Vf7w1eUr_O4TjRLUr-PGa$$Nz9bs_lY-pFUB1-FqclSc",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "PropID",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Unique identifier for each property in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each property in the dataset.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "First_Name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The first name of each customer is stored in this column. It stores values of string data type and provides a way to identify each customer by their first name.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Last_Name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Stores the last name of each customer. The values in this column are of string data type and provide a way to identify customers based on their family name. This column is part of the customers_nv dataset schema.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Gender",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Indicates the gender of each customer. It stores values of string data type, either 'Male' or 'Female', providing a way to categorize customers based on their gender.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Age",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Age of the customer in years. It stores numerical values in string data type, indicating the age of each customer. This column provides information about the age distribution of customers in the dataset.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Income",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "This column represents the income of each customer. It stores numerical values in string data type, indicating the estimated income of individual customers. This information can be used to segment customers based on their purchasing power and target them with appropriate marketing strategies.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Phone Number",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Stores the phone number of each customer. The values in this column are of string data type and provide a way to contact each customer. It is important to note that this column may contain different formats of phone numbers, such as with or without country codes or dashes.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Email Address",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Stores the email address of each customer. It is a string data type column that contains unique email addresses for each customer. This column can be used to communicate with customers and send promotional emails or newsletters.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "City",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The name of the city where the property is located. This column stores values of string data type and provides information about the geographical location of the property.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "State",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Zip Code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The postal code of the customer's address. It stores a string value that represents the zip code of the customer's location. This column can be used to group customers by their geographical location.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Credit Rating",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Credit rating of each customer. It stores a string value indicating the creditworthiness of each customer. The values in this column can range from poor to excellent, and are used to assess the risk associated with lending money to each customer.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "PropertyType",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Specifies the type of property associated with each mortgage. It stores values of string data type, indicating whether the property is a single-family home, multi-family home, condominium, or other type of property. This column provides important information about the characteristics of the properties associated with each mortgage.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Servicer",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The name of the company or organization that services the mortgage loan. This column stores string values and provides information about the entity responsible for managing the loan payments and other related activities.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "ServicerType",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Indicates the type of servicer responsible for managing the mortgage loan. The values in this column are of string data type and provide information about the organization or entity responsible for servicing the loan, such as a bank or mortgage company. This column can be used to track the performance of different types of servicers and their impact on loan status and other metrics.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "LoanType",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Specifies the type of loan associated with each property. It stores values of string data type, indicating the type of loan taken by the property owner. This column provides information about the terms and conditions of the loan, such as interest rates and payment schedules.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "UnPaidBalance",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The outstanding balance on the mortgage loan for a particular property. This column stores numerical values in double data type, indicating the amount of money that the borrower still owes on their mortgage loan. It is an important metric for lenders to assess the risk associated with a particular loan.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "CurrentPropValue",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The current market value of the property associated with the mortgage. This column stores numerical values in double data type, indicating the estimated worth of the property at the time of data collection. It provides an insight into the value of the property and its potential for generating revenue.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "LoanStatus",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Indicates the current status of the loan associated with the property. The values in this column are of string data type and provide information on whether the loan is in good standing, delinquent, or in default. This column is important for tracking the overall health of the mortgage portfolio.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "UPB_to_Value_Ratio",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/myg_assist_program_csv"
-      }
-    },
     "mW-g83NrpPVighsoM3P8q$$q1WAndja8Emj-d6mARuUy" : {
       "id" : "mW-g83NrpPVighsoM3P8q$$q1WAndja8Emj-d6mARuUy",
       "component" : "Aggregate",
@@ -2456,7 +1554,7 @@
         "pivotColumn" : null,
         "pivotValues" : [ ],
         "activeTab" : "aggregate",
-        "columnsSelector" : [ "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##PropID", "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##UPB_to_Value_Ratio", "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##State" ],
+        "columnsSelector" : [ "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##UPB_to_Value_Ratio", "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##State", "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##PropID" ],
         "groupBy" : [ {
           "target" : "State",
           "expression" : {
@@ -2476,15 +1574,15 @@
       "id" : "zyoB6ezFKyy2O8-m5hJvG$$bIf2_Q-tpYvZTjzMwyryh",
       "component" : "Source",
       "metadata" : {
-        "label" : "mortgage_east",
-        "slug" : "mortgage_east",
+        "label" : "csv_mortgage_east",
+        "slug" : "csv_mortgage_east",
         "x" : 320,
         "y" : 220,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "This gem reads in mortgage data from a CSV file and creates a Spark DataFrame with the specified schema. The data includes information about the property, loan, and servicer, as well as the unpaid balance, current property value, and loan status. This data can be used for mortgage analysis, risk assessment, and decision-making."
+        "comment" : "This gem reads in a CSV file containing mortgage data for properties in the eastern region of the United States. It specifies the schema of the data and sets options for reading in the file, such as the header and separator. This data can be used for analysis and modeling to gain insights into the mortgage market in the eastern region."
       },
       "ports" : {
         "inputs" : [ ],
@@ -2504,15 +1602,15 @@
       "id" : "4kqI7vslqwZUkg8g5eiyi$$IuxlRqsVksOhU3snnAewR",
       "component" : "Source",
       "metadata" : {
-        "label" : "mortgage_west",
-        "slug" : "mortgage_west",
+        "label" : "csv_mortgage_west",
+        "slug" : "csv_mortgage_west",
         "x" : 120,
         "y" : 420,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "This gem reads in a CSV file containing mortgage data for the western region of the United States. It specifies the schema of the data and sets options for reading in the file. This could be used to load and analyze mortgage data for the western region, providing insights into the housing market and economic trends in the area."
+        "comment" : "This gem reads in a CSV file containing mortgage data for the western region of the United States. It specifies the schema of the data and sets options for reading in the file. This could be used to load and analyze mortgage data for the western region, providing insights into the housing market and mortgage trends in the area."
       },
       "ports" : {
         "inputs" : [ ],
