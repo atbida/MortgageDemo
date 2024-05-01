@@ -1,6 +1,6 @@
 name: MortgageAnalytics
 description: ''
-version: 1.0.3
+version: 1.0.4
 author: bobw@prophecy.io
 language: python
 buildSystem: ''
