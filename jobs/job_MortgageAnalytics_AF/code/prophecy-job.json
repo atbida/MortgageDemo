@@ -20,9 +20,9 @@
       "do_xcom_push" : true
     },
     "availableFabrics" : [ {
-      "id" : "9770",
-      "name" : "Airflow",
-      "trialStartDate" : 1708458382170
+      "id" : "11413",
+      "name" : "Airflow-Prophecy",
+      "trialStartDate" : 1713534461239
     } ],
     "endDate" : "2024-03-13",
     "catchup" : true,
@@ -40,13 +40,14 @@
     "dynamicPipelineStatus" : {
       "databricks" : false,
       "dataproc" : false,
-      "emr" : false
+      "emr" : false,
+      "onprem" : false
     }
   },
   "processes" : {
     "b-MDkxl6DMep6wTz1Wci2$$La6MzI6hJAC2_DrKIFMf9" : {
       "id" : "b-MDkxl6DMep6wTz1Wci2$$La6MzI6hJAC2_DrKIFMf9",
-      "component" : "Pipeline",
+      "component" : "DatabricksPipeline",
       "metadata" : {
         "label" : "mortgage_analytics",
         "slug" : "mortgage_analytics",
@@ -87,7 +88,7 @@
     },
     "XVqy1K2ZpXoUAmDAgW_ey$$7ZBXrq2t6iu8IpfVOU3m2" : {
       "id" : "XVqy1K2ZpXoUAmDAgW_ey$$7ZBXrq2t6iu8IpfVOU3m2",
-      "component" : "Pipeline",
+      "component" : "DatabricksPipeline",
       "metadata" : {
         "label" : "troubled_mortgage_HAF",
         "slug" : "troubled_mortgage_HAF",
