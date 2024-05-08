@@ -222,26 +222,26 @@ sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
 - type: plibMaven
-  modifiedAt: '2024-05-01T13:39:36.353691Z'
+  modifiedAt: '2024-05-08T16:46:12.899048Z'
   name: plibMaven
-  version: 7.1.93
-  id: '1404743804'
-  createdAt: '2024-05-01T13:39:36.353424Z'
+  version: 7.1.95
+  id: '2077761997'
+  createdAt: '2024-05-08T16:46:12.89889Z'
 - type: plibPypi
-  modifiedAt: '2024-05-01T13:39:36.35378Z'
+  modifiedAt: '2024-05-08T16:46:12.899101Z'
   name: plibPypi
   version: 1.8.15
-  id: '1899783584'
-  createdAt: '2024-05-01T13:39:36.353756Z'
+  id: '694918790'
+  createdAt: '2024-05-08T16:46:12.899086Z'
 projectDependencies:
   '12654':
     projectUID: 12654
     projectName: ProphecySparkBasicsPython
     repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
-    version: 0.2.10
+    version: 0.2.12
     isDefault: true
     author: null
-    createdAt: '2024-05-01 13:39:56'
+    createdAt: '2024-05-08 16:46:05'
   '12655':
     projectUID: 12655
     projectName: ProphecyWarehousePython
