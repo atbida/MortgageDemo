@@ -20,9 +20,9 @@
       "do_xcom_push" : true
     },
     "availableFabrics" : [ {
-      "id" : "11413",
+      "id" : "12505",
       "name" : "Airflow-Prophecy",
-      "trialStartDate" : 1713534461239
+      "trialStartDate" : 1715877877841
     } ],
     "endDate" : "2024-03-13",
     "catchup" : true,
@@ -75,7 +75,10 @@
             "MortgageAnalytics" : [ "default" ]
           },
           "overrides" : { },
-          "selectedInstance" : "default"
+          "selectedInstance" : {
+            "type" : "literal",
+            "value" : "default"
+          }
         },
         "taskId" : null,
         "pipelineId" : {
@@ -116,7 +119,10 @@
             "MortgageAnalytics" : [ "default" ]
           },
           "overrides" : { },
-          "selectedInstance" : "default"
+          "selectedInstance" : {
+            "type" : "literal",
+            "value" : "default"
+          }
         },
         "taskId" : null,
         "pipelineId" : {
