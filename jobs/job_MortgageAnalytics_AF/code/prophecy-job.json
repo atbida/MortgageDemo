@@ -1,10 +1,10 @@
 {
   "metainfo" : {
     "type" : "Prophecy",
-    "fabricId" : "9770",
+    "fabricId" : "13760",
     "jobId" : "jobs/job_MortgageAnalytics_AF",
     "name" : "job_MortgageAnalytics_AF",
-    "dagName" : "_E5BJiL_5rAGW3NpQzrLug_",
+    "dagName" : "76FqaAmgUZX5Dgo_w0FYKw_",
     "schedule" : "0 0 * * *",
     "enabled" : false,
     "alerting" : {
@@ -16,17 +16,21 @@
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
       "ignore_first_depends_on_past" : true,
-      "pool" : "P1Mfmhdo",
+      "pool" : "2AGL95yk",
       "do_xcom_push" : true
     },
     "availableFabrics" : [ {
       "id" : "12505",
       "name" : "Airflow-Prophecy",
       "trialStartDate" : 1715877877841
+    }, {
+      "id" : "13760",
+      "name" : "AirFlow-June",
+      "trialStartDate" : 1718107529481
     } ],
-    "endDate" : "2024-03-13",
+    "endDate" : "2024-07-01",
     "catchup" : true,
-    "startDate" : "2024-03-13",
+    "startDate" : "2024-06-12",
     "tags" : [ ],
     "scheduleTimeZone" : "UTC",
     "dagParams" : {

@@ -1,14 +1,14 @@
-from _e5bjil_5ragw3npqzrlug_.utils import *
+from _76fqaamguzx5dgo_w0fykw_.utils import *
 
-@task_wrapper(task_id = "mortgage_analytics")
-def mortgage_analytics(ti=None, params=None, **context):
+@task_wrapper(task_id = "troubled_mortgage_HAF")
+def troubled_mortgage_HAF(ti=None, params=None, **context):
     from datetime import timedelta
     from airflow.providers.databricks.operators.databricks import DatabricksSubmitRunOperator # noqa
 
     return DatabricksSubmitRunOperator(  # noqa
-        task_id = "mortgage_analytics",
+        task_id = "troubled_mortgage_HAF",
         json = {
-          "task_key": "mortgage_analytics", 
+          "task_key": "troubled_mortgage_HAF", 
           "new_cluster": {
             "node_type_id": "i3.xlarge", 
             "spark_version": "12.2.x-scala2.12", 
@@ -19,7 +19,7 @@ def mortgage_analytics(ti=None, params=None, **context):
             "spark_conf": {
               "spark.prophecy.metadata.job.uri": "__PROJECT_ID_PLACEHOLDER__/jobs/job_MortgageAnalytics_AF", 
               "spark.prophecy.metadata.is.interactive.run": "false", 
-              "spark.prophecy.metadata.fabric.id": "9770", 
+              "spark.prophecy.metadata.fabric.id": "13760", 
               "spark.prophecy.tasks": "H4sIAAAAAAAAAKuuBQBDv6ajAgAAAA==", 
               "spark.prophecy.metadata.url": "__PROPHECY_URL_PLACEHOLDER__", 
               "spark.master": "local[*, 4]", 
@@ -40,13 +40,13 @@ def mortgage_analytics(ti=None, params=None, **context):
             "enable_elastic_disk": False
           }, 
           "python_wheel_task": {
-            "package_name": "mortgage_analytics", 
+            "package_name": "troubled_mortgage_HAF", 
             "entry_point": "main", 
             "parameters": ["-i", "default", "-O", "{}"]
           }, 
-          "libraries": [{"maven" : {"coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.0.5"}},                          {"pypi" : {"package" : "prophecy-libs==1.9.4"}},                          {
-                           "whl": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/mortgage_analytics-1.0-py3-none-any.whl"
+          "libraries": [{"maven" : {"coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.0.11"}},                          {"pypi" : {"package" : "prophecy-libs==1.9.5"}},                          {
+                           "whl": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/troubled_mortgage_HAF-1.0-py3-none-any.whl"
                          }]
         },
-        databricks_conn_id = "",
+        databricks_conn_id = "6ByEIr95xN-jNmQlYY-s9",
     )
