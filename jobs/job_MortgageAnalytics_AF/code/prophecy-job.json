@@ -20,10 +20,6 @@
       "do_xcom_push" : true
     },
     "availableFabrics" : [ {
-      "id" : "12505",
-      "name" : "Airflow-Prophecy",
-      "trialStartDate" : 1715877877841
-    }, {
       "id" : "13760",
       "name" : "AirFlow-June",
       "trialStartDate" : 1718107529481
