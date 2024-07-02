@@ -1,8 +1,8 @@
 from airflow.decorators import task
 
 db_pipeline_id_to_path_dict = {
-    "pipelines/troubled_mortgage_assistance": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/troubled_mortgage_HAF-1.0-py3-none-any.whl", 
-    "pipelines/mortgage_analytics": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/mortgage_analytics-1.0-py3-none-any.whl"
+    "pipelines/mortgage_analytics": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/mortgage_analytics-1.0-py3-none-any.whl", 
+    "pipelines/troubled_mortgage_assistance": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/troubled_mortgage_HAF-1.0-py3-none-any.whl"
 }
 
 
@@ -20,6 +20,6 @@ def task_wrapper(task_id):
     return decorator
 
 pipeline_package_name = {
-    "pipelines/troubled_mortgage_assistance": "troubled_mortgage_HAF", 
-    "pipelines/mortgage_analytics": "mortgage_analytics"
+    "pipelines/mortgage_analytics": "mortgage_analytics", 
+    "pipelines/troubled_mortgage_assistance": "troubled_mortgage_HAF"
 }
