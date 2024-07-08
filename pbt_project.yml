@@ -226,7 +226,7 @@ dependencies:
 - type: plibMaven
   modifiedAt: '2024-06-04T18:31:55.787885Z'
   name: plibMaven
-  version: 8.0.11
+  version: 8.0.11-1
   id: '1686445435'
   createdAt: '2024-06-04T18:31:55.787786Z'
   enabled: true
@@ -234,7 +234,7 @@ dependencies:
 - type: plibPypi
   modifiedAt: '2024-06-04T18:31:55.787944Z'
   name: plibPypi
-  version: 1.9.5
+  version: 1.9.7
   id: '470973096'
   createdAt: '2024-06-04T18:31:55.787927Z'
   enabled: true

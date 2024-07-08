@@ -44,7 +44,7 @@ def troubled_mortgage_HAF(ti=None, params=None, **context):
             "entry_point": "main", 
             "parameters": ["-i", "default", "-O", "{}"]
           }, 
-          "libraries": [{"maven" : {"coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.0.11"}},                          {"pypi" : {"package" : "prophecy-libs==1.9.5"}},                          {
+          "libraries": [{"maven" : {"coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.0.11-1"}},                          {"pypi" : {"package" : "prophecy-libs==1.9.7"}},                          {
                            "whl": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/troubled_mortgage_HAF-1.0-py3-none-any.whl"
                          }]
         },
