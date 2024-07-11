@@ -19,9 +19,10 @@ def troubled_mortgage_HAF(ti=None, params=None, **context):
             "spark_conf": {
               "spark.prophecy.metadata.job.uri": "__PROJECT_ID_PLACEHOLDER__/jobs/job_MortgageAnalytics_AF", 
               "spark.prophecy.metadata.is.interactive.run": "false", 
-              "spark.prophecy.metadata.fabric.id": "13760", 
+              "spark.prophecy.metadata.fabric.id": "9631", 
               "spark.prophecy.tasks": "H4sIAAAAAAAAAKuuBQBDv6ajAgAAAA==", 
               "spark.prophecy.metadata.url": "__PROPHECY_URL_PLACEHOLDER__", 
+              "spark.prophecy.metadata.user.id": "5088", 
               "spark.master": "local[*, 4]", 
               "spark.prophecy.project.id": "__PROJECT_ID_PLACEHOLDER__", 
               "spark.prophecy.execution.metrics.disabled": "false", 
@@ -44,7 +45,7 @@ def troubled_mortgage_HAF(ti=None, params=None, **context):
             "entry_point": "main", 
             "parameters": ["-i", "default", "-O", "{}"]
           }, 
-          "libraries": [{"maven" : {"coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.0.11-1"}},                          {"pypi" : {"package" : "prophecy-libs==1.9.7"}},                          {
+          "libraries": [{"maven" : {"coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.0.25"}},                          {"pypi" : {"package" : "prophecy-libs==1.9.9"}},                          {
                            "whl": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/troubled_mortgage_HAF-1.0-py3-none-any.whl"
                          }]
         },
