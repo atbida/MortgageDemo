@@ -228,19 +228,22 @@ dependencies:
 - type: plibMaven
   modifiedAt: '2024-06-04T18:31:55.787885Z'
   name: plibMaven
-  version: 8.0.25
+  version: 8.0.29
   id: '1686445435'
   createdAt: '2024-06-04T18:31:55.787786Z'
   enabled: true
   entity: Project
 - type: plibPypi
-  modifiedAt: '2024-06-04T18:31:55.787944Z'
-  name: plibPypi
+  modifiedAt: '2024-07-26T12:54:06.626Z'
+  name: ProphecyLibsPython
   version: 1.9.9
   id: '470973096'
   createdAt: '2024-06-04T18:31:55.787927Z'
   enabled: true
   entity: Project
+  description: Default dependency for Prophecy Libs
+  scope: Project
+  editable: true
 projectDependencies:
   '12654':
     projectUID: 12654
@@ -249,7 +252,7 @@ projectDependencies:
     version: 0.2.25
     isDefault: true
     author: null
-    createdAt: '2024-06-11 03:39:28'
+    createdAt: '2024-07-26 12:53:58'
   '12655':
     projectUID: 12655
     projectName: ProphecyWarehousePython

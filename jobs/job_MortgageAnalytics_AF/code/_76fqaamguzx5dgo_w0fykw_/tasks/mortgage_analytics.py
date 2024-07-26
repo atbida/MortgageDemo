@@ -45,7 +45,7 @@ def mortgage_analytics(ti=None, params=None, **context):
             "entry_point": "main", 
             "parameters": ["-i", "default", "-O", "{}"]
           }, 
-          "libraries": [{"maven" : {"coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.0.25"}},                          {"pypi" : {"package" : "prophecy-libs==1.9.9"}},                          {
+          "libraries": [{"maven" : {"coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.0.29"}},                          {"pypi" : {"package" : "prophecy-libs==1.9.9"}},                          {
                            "whl": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/mortgage_analytics-1.0-py3-none-any.whl"
                          }]
         },
