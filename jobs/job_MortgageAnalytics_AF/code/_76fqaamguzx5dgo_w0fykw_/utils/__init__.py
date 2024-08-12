@@ -1,1 +1,1 @@
-from .prophecy_utils import *
+from .prophecy import *
