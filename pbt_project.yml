@@ -228,13 +228,13 @@ dependencies:
 - type: plibMaven
   modifiedAt: '2024-06-04T18:31:55.787885Z'
   name: plibMaven
-  version: 8.0.29
+  version: 8.0.31
   id: '1686445435'
   createdAt: '2024-06-04T18:31:55.787786Z'
   enabled: true
   entity: Project
 - type: plibPypi
-  modifiedAt: '2024-07-26T12:54:06.626Z'
+  modifiedAt: '2024-08-14T14:47:30.416Z'
   name: ProphecyLibsPython
   version: 1.9.9
   id: '470973096'

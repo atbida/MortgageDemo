@@ -20,6 +20,6 @@ def task_wrapper(task_id):
     return decorator
 
 pipeline_package_name = {
-    "pipelines/troubled_mortgage_assistance": "troubled_mortgage_HAF", 
-    "pipelines/mortgage_analytics": "mortgage_analytics"
+    "pipelines/mortgage_analytics": "mortgage_analytics", 
+    "pipelines/troubled_mortgage_assistance": "troubled_mortgage_HAF"
 }
