@@ -19,11 +19,6 @@
       "pool" : "2AGL95yk",
       "do_xcom_push" : true
     },
-    "availableFabrics" : [ {
-      "id" : "13760",
-      "name" : "AirFlow-June",
-      "trialStartDate" : 1718107529481
-    } ],
     "endDate" : "2024-07-01",
     "catchup" : true,
     "startDate" : "2024-06-12",
