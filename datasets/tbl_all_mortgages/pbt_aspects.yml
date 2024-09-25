@@ -1,0 +1,81 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: PropID
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: City
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: State
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: PropertyType
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Servicer
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: ServicerType
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: LoanType
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: UnPaidBalance
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: CurrentPropValue
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: LoanStatus
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: UPBtoValueRatio
+    type: double
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

@@ -26,12 +26,12 @@ pipelines:
     createdAt: '2024-03-12 18:55:42'
     datasets:
       inputs:
-      - datasets/mortgage_east
-      - datasets/mortgage_west
+      - datasets/mortgage_east_loandemo
+      - datasets/mortgage_west_anya
       outputs:
-      - datasets/state_analysis_csv
-      - datasets/tar_all_mortgages
-      - datasets/tar_troubled_mortgages
+      - datasets/csv_by_state_analysis_loandemo
+      - datasets/tbl_all_mortgages
+      - datasets/tbl_troubled_mortgages
     subgraphs: []
     dependencies: {}
   pipelines/troubled_mortgage_assistance:
@@ -53,8 +53,11 @@ pipelines:
     datasets:
       inputs:
       - datasets/customers_nv
+      - datasets/customers_nv_loandemo
       - datasets/tar_troubled_mortgages
+      - datasets/tbl_troubled_mortgages
       outputs:
+      - datasets/mtg_assist_prog_HAF_csv_loandemo
       - datasets/myg_assist_program_csv
     subgraphs: []
     dependencies: {}
@@ -150,6 +153,110 @@ datasets:
         description: ''
         author: bobw@prophecy.io
         createdAt: '2024-03-13 14:49:32'
+  datasets/mortgage_east_loandemo:
+    name: mortgage_east_loandemo
+    description: ''
+    author: anya+webinar@prophecy.io
+    createdAt: '2024-09-25 19:22:27'
+    mode: batch
+    physicalDatasets:
+      devDatabricksAnya:
+        fabricId: 183
+        datasetType: Database
+        description: ''
+        author: anya+webinar@prophecy.io
+        createdAt: '2024-09-25 19:22:27'
+  datasets/mortgage_west_anya:
+    name: mortgage_west_anya
+    description: ''
+    author: anya+webinar@prophecy.io
+    createdAt: '2024-09-25 19:23:06'
+    mode: batch
+    physicalDatasets:
+      devDatabricksAnya:
+        fabricId: 183
+        datasetType: Database
+        description: ''
+        author: anya+webinar@prophecy.io
+        createdAt: '2024-09-25 19:23:06'
+  datasets/csv_by_state_analysis_anya:
+    name: csv_by_state_analysis_anya
+    description: ''
+    author: anya+webinar@prophecy.io
+    createdAt: '2024-09-25 19:44:03'
+    mode: batch
+    physicalDatasets:
+      devDatabricksAnya:
+        fabricId: 183
+        datasetType: Database
+        description: ''
+        author: anya+webinar@prophecy.io
+        createdAt: '2024-09-25 19:44:03'
+  datasets/csv_by_state_analysis_loandemo:
+    name: csv_by_state_analysis_loandemo
+    description: ''
+    author: anya+webinar@prophecy.io
+    createdAt: '2024-09-25 19:47:18'
+    mode: batch
+    physicalDatasets:
+      devDatabricksAnya:
+        fabricId: 183
+        datasetType: File
+        description: ''
+        author: anya+webinar@prophecy.io
+        createdAt: '2024-09-25 19:47:18'
+  datasets/tbl_troubled_mortgages:
+    name: tbl_troubled_mortgages
+    description: ''
+    author: anya+webinar@prophecy.io
+    createdAt: '2024-09-25 19:49:19'
+    mode: batch
+    physicalDatasets:
+      devDatabricksAnya:
+        fabricId: 183
+        datasetType: Database
+        description: ''
+        author: anya+webinar@prophecy.io
+        createdAt: '2024-09-25 19:49:19'
+  datasets/tbl_all_mortgages:
+    name: tbl_all_mortgages
+    description: ''
+    author: anya+webinar@prophecy.io
+    createdAt: '2024-09-25 19:50:16'
+    mode: batch
+    physicalDatasets:
+      devDatabricksAnya:
+        fabricId: 183
+        datasetType: Database
+        description: ''
+        author: anya+webinar@prophecy.io
+        createdAt: '2024-09-25 19:50:16'
+  datasets/customers_nv_loandemo:
+    name: customers_nv_loandemo
+    description: ''
+    author: anya+webinar@prophecy.io
+    createdAt: '2024-09-25 20:19:32'
+    mode: batch
+    physicalDatasets:
+      devDatabricksAnya:
+        fabricId: 183
+        datasetType: Database
+        description: ''
+        author: anya+webinar@prophecy.io
+        createdAt: '2024-09-25 20:19:32'
+  datasets/mtg_assist_prog_HAF_csv_loandemo:
+    name: mtg_assist_prog_HAF_csv_loandemo
+    description: ''
+    author: anya+webinar@prophecy.io
+    createdAt: '2024-09-25 20:27:51'
+    mode: batch
+    physicalDatasets:
+      devDatabricksAnya:
+        fabricId: 183
+        datasetType: File
+        description: ''
+        author: anya+webinar@prophecy.io
+        createdAt: '2024-09-25 20:27:51'
 templates: {}
 jobs:
   jobs/job_MortgageAnalytics_DBX:
@@ -247,18 +354,18 @@ dependencies:
   scope: Project
   editable: true
 projectDependencies:
-  '12654':
-    projectUID: 12654
+  '224':
+    projectUID: 224
     projectName: ProphecySparkBasicsPython
-    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
+    repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=
     version: 0.2.30
     isDefault: true
     author: null
     createdAt: '2024-09-25 13:18:01'
-  '12655':
-    projectUID: 12655
+  '225':
+    projectUID: 225
     projectName: ProphecyWarehousePython
-    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12655.git&subPath=
+    repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_225.git&subPath=
     version: 0.0.8
     isDefault: true
     author: null

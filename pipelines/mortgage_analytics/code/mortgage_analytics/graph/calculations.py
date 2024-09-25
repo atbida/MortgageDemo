@@ -11,12 +11,12 @@ def calculations(spark: SparkSession, in0: DataFrame) -> DataFrame:
         col("PropID"), 
         col("City"), 
         initcap(col("State")).alias("State"), 
-        col("PropertyType"), 
+        lit("Property Type").alias("PropertyType"), 
         col("Servicer"), 
-        col("ServicerType"), 
-        col("LoanType"), 
-        col("UnPaidBalance"), 
-        col("CurrentPropValue"), 
-        col("LoanStatus"), 
-        (col("UnPaidBalance") / col("CurrentPropValue")).alias("UPB_to_Value_Ratio")
+        col("Servicer").alias("Type").alias("ServicerType"), 
+        lit("Loan Type").alias("LoanType"), 
+        lit("UnPaid Balance").alias("UnPaidBalance"), 
+        lit("Current Prop Value").alias("CurrentPropValue"), 
+        lit("Loan Status").alias("LoanStatus"), 
+        (col("`UnPaid Balance`") / col("`Current Prop Value`")).alias("UPBtoValueRatio")
     )

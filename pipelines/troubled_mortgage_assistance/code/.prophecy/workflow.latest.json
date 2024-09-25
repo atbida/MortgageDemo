@@ -13,8 +13,710 @@
     },
     "id" : "1",
     "uri" : "pipelines/troubled_mortgage_assistance",
+    "sourceSuggestions" : [ {
+      "sourceLabel" : "myg_assist_program_csv",
+      "sourceDatasetId" : "datasets/myg_assist_program_csv",
+      "canJoinWith" : [ {
+        "processLabel" : "nv_customers",
+        "processId" : "OCH1iiHJ1SQWHBuA31wRY$$2tmUYpYs9fep22XfBXOQn",
+        "joinColumns" : [ "Credit Rating", "Email Address", "First_Name" ],
+        "isRecommended" : true,
+        "properties" : {
+          "columnsSelector" : [ "Credit Rating", "Email Address", "First_Name" ],
+          "conditions" : [ {
+            "alias" : "myg_assist_program_csv",
+            "expression" : "(((nv_customers.First_Name = myg_assist_program_csv.First_Name) AND (nv_customers.`Credit Rating` = myg_assist_program_csv.`Credit Rating`)) AND (nv_customers.`Email Address` = myg_assist_program_csv.`Email Address`))",
+            "joinType" : "inner"
+          } ],
+          "expressions" : [ {
+            "alias" : "PropID",
+            "expression" : "myg_assist_program_csv.PropID"
+          }, {
+            "alias" : "City",
+            "expression" : "myg_assist_program_csv.City"
+          }, {
+            "alias" : "State",
+            "expression" : "myg_assist_program_csv.State"
+          }, {
+            "alias" : "PropertyType",
+            "expression" : "myg_assist_program_csv.PropertyType"
+          }, {
+            "alias" : "Servicer",
+            "expression" : "myg_assist_program_csv.Servicer"
+          }, {
+            "alias" : "ServicerType",
+            "expression" : "myg_assist_program_csv.ServicerType"
+          }, {
+            "alias" : "LoanType",
+            "expression" : "myg_assist_program_csv.LoanType"
+          }, {
+            "alias" : "UnPaidBalance",
+            "expression" : "myg_assist_program_csv.UnPaidBalance"
+          }, {
+            "alias" : "CurrentPropValue",
+            "expression" : "myg_assist_program_csv.CurrentPropValue"
+          }, {
+            "alias" : "LoanStatus",
+            "expression" : "myg_assist_program_csv.LoanStatus"
+          }, {
+            "alias" : "UPB_to_Value_Ratio",
+            "expression" : "myg_assist_program_csv.UPB_to_Value_Ratio"
+          }, {
+            "alias" : "Income",
+            "expression" : "nv_customers.Income"
+          }, {
+            "alias" : "First_Name",
+            "expression" : "nv_customers.First_Name"
+          }, {
+            "alias" : "Cust ID",
+            "expression" : "nv_customers.`Cust ID`"
+          }, {
+            "alias" : "Zip Code",
+            "expression" : "nv_customers.`Zip Code`"
+          }, {
+            "alias" : "Email Address",
+            "expression" : "nv_customers.`Email Address`"
+          }, {
+            "alias" : "Gender",
+            "expression" : "nv_customers.Gender"
+          }, {
+            "alias" : "Age",
+            "expression" : "nv_customers.Age"
+          }, {
+            "alias" : "Credit Rating",
+            "expression" : "nv_customers.`Credit Rating`"
+          }, {
+            "alias" : "Phone Number",
+            "expression" : "nv_customers.`Phone Number`"
+          }, {
+            "alias" : "Last_Name",
+            "expression" : "nv_customers.Last_Name"
+          } ],
+          "headAlias" : "datasets/myg_assist_program_csv"
+        }
+      }, {
+        "processLabel" : "tar_troubled_mortgages",
+        "processId" : "WvDvcGFNvfxWQODLPs8Wc$$hHso6b9sYnq8TTBe_lcHD",
+        "joinColumns" : [ "City", "LoanStatus", "LoanType" ],
+        "isRecommended" : false,
+        "properties" : {
+          "columnsSelector" : [ "City", "LoanStatus", "LoanType" ],
+          "conditions" : [ {
+            "alias" : "myg_assist_program_csv",
+            "expression" : "(((tar_troubled_mortgages.City = myg_assist_program_csv.City) AND (tar_troubled_mortgages.LoanStatus = myg_assist_program_csv.LoanStatus)) AND (tar_troubled_mortgages.LoanType = myg_assist_program_csv.LoanType))",
+            "joinType" : "inner"
+          } ],
+          "expressions" : [ {
+            "alias" : "First_Name",
+            "expression" : "myg_assist_program_csv.First_Name"
+          }, {
+            "alias" : "Last_Name",
+            "expression" : "myg_assist_program_csv.Last_Name"
+          }, {
+            "alias" : "Gender",
+            "expression" : "myg_assist_program_csv.Gender"
+          }, {
+            "alias" : "Age",
+            "expression" : "myg_assist_program_csv.Age"
+          }, {
+            "alias" : "Income",
+            "expression" : "myg_assist_program_csv.Income"
+          }, {
+            "alias" : "Phone Number",
+            "expression" : "myg_assist_program_csv.`Phone Number`"
+          }, {
+            "alias" : "Email Address",
+            "expression" : "myg_assist_program_csv.`Email Address`"
+          }, {
+            "alias" : "Zip Code",
+            "expression" : "myg_assist_program_csv.`Zip Code`"
+          }, {
+            "alias" : "Credit Rating",
+            "expression" : "myg_assist_program_csv.`Credit Rating`"
+          }, {
+            "alias" : "State",
+            "expression" : "tar_troubled_mortgages.State"
+          }, {
+            "alias" : "PropertyType",
+            "expression" : "tar_troubled_mortgages.PropertyType"
+          }, {
+            "alias" : "UnPaidBalance",
+            "expression" : "tar_troubled_mortgages.UnPaidBalance"
+          }, {
+            "alias" : "Servicer",
+            "expression" : "tar_troubled_mortgages.Servicer"
+          }, {
+            "alias" : "CurrentPropValue",
+            "expression" : "tar_troubled_mortgages.CurrentPropValue"
+          }, {
+            "alias" : "LoanStatus",
+            "expression" : "tar_troubled_mortgages.LoanStatus"
+          }, {
+            "alias" : "ServicerType",
+            "expression" : "tar_troubled_mortgages.ServicerType"
+          }, {
+            "alias" : "UPB_to_Value_Ratio",
+            "expression" : "tar_troubled_mortgages.UPB_to_Value_Ratio"
+          }, {
+            "alias" : "PropID",
+            "expression" : "tar_troubled_mortgages.PropID"
+          }, {
+            "alias" : "City",
+            "expression" : "tar_troubled_mortgages.City"
+          }, {
+            "alias" : "LoanType",
+            "expression" : "tar_troubled_mortgages.LoanType"
+          } ],
+          "headAlias" : "datasets/myg_assist_program_csv"
+        }
+      } ]
+    }, {
+      "sourceLabel" : "mtg_assist_prog_HAF_csv_loandemo_1",
+      "sourceDatasetId" : "datasets/mtg_assist_prog_HAF_csv_loandemo",
+      "canJoinWith" : [ {
+        "processLabel" : "nv_customers",
+        "processId" : "OCH1iiHJ1SQWHBuA31wRY$$2tmUYpYs9fep22XfBXOQn",
+        "joinColumns" : [ "Credit Rating", "Email Address", "First_Name" ],
+        "isRecommended" : true,
+        "properties" : {
+          "columnsSelector" : [ "Credit Rating", "Email Address", "First_Name" ],
+          "conditions" : [ {
+            "alias" : "mtg_assist_prog_HAF_csv_loandemo_1",
+            "expression" : "(((nv_customers.First_Name = mtg_assist_prog_HAF_csv_loandemo_1.First_Name) AND (nv_customers.`Credit Rating` = mtg_assist_prog_HAF_csv_loandemo_1.`Credit Rating`)) AND (nv_customers.`Email Address` = mtg_assist_prog_HAF_csv_loandemo_1.`Email Address`))",
+            "joinType" : "inner"
+          } ],
+          "expressions" : [ {
+            "alias" : "PropID",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.PropID"
+          }, {
+            "alias" : "City",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.City"
+          }, {
+            "alias" : "State",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.State"
+          }, {
+            "alias" : "PropertyType",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.PropertyType"
+          }, {
+            "alias" : "Servicer",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.Servicer"
+          }, {
+            "alias" : "ServicerType",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.ServicerType"
+          }, {
+            "alias" : "LoanType",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.LoanType"
+          }, {
+            "alias" : "UnPaidBalance",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.UnPaidBalance"
+          }, {
+            "alias" : "CurrentPropValue",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.CurrentPropValue"
+          }, {
+            "alias" : "LoanStatus",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.LoanStatus"
+          }, {
+            "alias" : "UPB_to_Value_Ratio",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.UPB_to_Value_Ratio"
+          }, {
+            "alias" : "Income",
+            "expression" : "nv_customers.Income"
+          }, {
+            "alias" : "First_Name",
+            "expression" : "nv_customers.First_Name"
+          }, {
+            "alias" : "Cust ID",
+            "expression" : "nv_customers.`Cust ID`"
+          }, {
+            "alias" : "Zip Code",
+            "expression" : "nv_customers.`Zip Code`"
+          }, {
+            "alias" : "Email Address",
+            "expression" : "nv_customers.`Email Address`"
+          }, {
+            "alias" : "Gender",
+            "expression" : "nv_customers.Gender"
+          }, {
+            "alias" : "Age",
+            "expression" : "nv_customers.Age"
+          }, {
+            "alias" : "Credit Rating",
+            "expression" : "nv_customers.`Credit Rating`"
+          }, {
+            "alias" : "Phone Number",
+            "expression" : "nv_customers.`Phone Number`"
+          }, {
+            "alias" : "Last_Name",
+            "expression" : "nv_customers.Last_Name"
+          } ],
+          "headAlias" : "datasets/mtg_assist_prog_HAF_csv_loandemo"
+        }
+      }, {
+        "processLabel" : "tar_troubled_mortgages",
+        "processId" : "WvDvcGFNvfxWQODLPs8Wc$$hHso6b9sYnq8TTBe_lcHD",
+        "joinColumns" : [ "City", "LoanStatus", "LoanType" ],
+        "isRecommended" : false,
+        "properties" : {
+          "columnsSelector" : [ "City", "LoanStatus", "LoanType" ],
+          "conditions" : [ {
+            "alias" : "mtg_assist_prog_HAF_csv_loandemo_1",
+            "expression" : "(((tar_troubled_mortgages.City = mtg_assist_prog_HAF_csv_loandemo_1.City) AND (tar_troubled_mortgages.LoanStatus = mtg_assist_prog_HAF_csv_loandemo_1.LoanStatus)) AND (tar_troubled_mortgages.LoanType = mtg_assist_prog_HAF_csv_loandemo_1.LoanType))",
+            "joinType" : "inner"
+          } ],
+          "expressions" : [ {
+            "alias" : "First_Name",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.First_Name"
+          }, {
+            "alias" : "Last_Name",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.Last_Name"
+          }, {
+            "alias" : "Gender",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.Gender"
+          }, {
+            "alias" : "Age",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.Age"
+          }, {
+            "alias" : "Income",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.Income"
+          }, {
+            "alias" : "Phone Number",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.`Phone Number`"
+          }, {
+            "alias" : "Email Address",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.`Email Address`"
+          }, {
+            "alias" : "Zip Code",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.`Zip Code`"
+          }, {
+            "alias" : "Credit Rating",
+            "expression" : "mtg_assist_prog_HAF_csv_loandemo_1.`Credit Rating`"
+          }, {
+            "alias" : "State",
+            "expression" : "tar_troubled_mortgages.State"
+          }, {
+            "alias" : "PropertyType",
+            "expression" : "tar_troubled_mortgages.PropertyType"
+          }, {
+            "alias" : "UnPaidBalance",
+            "expression" : "tar_troubled_mortgages.UnPaidBalance"
+          }, {
+            "alias" : "Servicer",
+            "expression" : "tar_troubled_mortgages.Servicer"
+          }, {
+            "alias" : "CurrentPropValue",
+            "expression" : "tar_troubled_mortgages.CurrentPropValue"
+          }, {
+            "alias" : "LoanStatus",
+            "expression" : "tar_troubled_mortgages.LoanStatus"
+          }, {
+            "alias" : "ServicerType",
+            "expression" : "tar_troubled_mortgages.ServicerType"
+          }, {
+            "alias" : "UPB_to_Value_Ratio",
+            "expression" : "tar_troubled_mortgages.UPB_to_Value_Ratio"
+          }, {
+            "alias" : "PropID",
+            "expression" : "tar_troubled_mortgages.PropID"
+          }, {
+            "alias" : "City",
+            "expression" : "tar_troubled_mortgages.City"
+          }, {
+            "alias" : "LoanType",
+            "expression" : "tar_troubled_mortgages.LoanType"
+          } ],
+          "headAlias" : "datasets/mtg_assist_prog_HAF_csv_loandemo"
+        }
+      } ]
+    }, {
+      "sourceLabel" : "customers_nv_loandemo_1",
+      "sourceDatasetId" : "datasets/customers_nv_loandemo",
+      "canJoinWith" : [ {
+        "processLabel" : "nv_customers",
+        "processId" : "OCH1iiHJ1SQWHBuA31wRY$$2tmUYpYs9fep22XfBXOQn",
+        "joinColumns" : [ "Credit Rating", "Email Address", "First_Name" ],
+        "isRecommended" : true,
+        "properties" : {
+          "columnsSelector" : [ "Credit Rating", "Email Address", "First_Name" ],
+          "conditions" : [ {
+            "alias" : "customers_nv_loandemo_1",
+            "expression" : "(((nv_customers.First_Name = customers_nv_loandemo_1.First_Name) AND (nv_customers.`Credit Rating` = customers_nv_loandemo_1.`Credit Rating`)) AND (nv_customers.`Email Address` = customers_nv_loandemo_1.`Email Address`))",
+            "joinType" : "inner"
+          } ],
+          "expressions" : [ {
+            "alias" : "Income",
+            "expression" : "nv_customers.Income"
+          }, {
+            "alias" : "First_Name",
+            "expression" : "nv_customers.First_Name"
+          }, {
+            "alias" : "Cust ID",
+            "expression" : "nv_customers.`Cust ID`"
+          }, {
+            "alias" : "Zip Code",
+            "expression" : "nv_customers.`Zip Code`"
+          }, {
+            "alias" : "Email Address",
+            "expression" : "nv_customers.`Email Address`"
+          }, {
+            "alias" : "Gender",
+            "expression" : "nv_customers.Gender"
+          }, {
+            "alias" : "Age",
+            "expression" : "nv_customers.Age"
+          }, {
+            "alias" : "Credit Rating",
+            "expression" : "nv_customers.`Credit Rating`"
+          }, {
+            "alias" : "Phone Number",
+            "expression" : "nv_customers.`Phone Number`"
+          }, {
+            "alias" : "Last_Name",
+            "expression" : "nv_customers.Last_Name"
+          } ],
+          "headAlias" : "datasets/customers_nv_loandemo"
+        }
+      } ]
+    }, {
+      "sourceLabel" : "mortgage_west_anya",
+      "sourceDatasetId" : "datasets/mortgage_west_anya",
+      "canJoinWith" : [ {
+        "processLabel" : "tar_troubled_mortgages",
+        "processId" : "WvDvcGFNvfxWQODLPs8Wc$$hHso6b9sYnq8TTBe_lcHD",
+        "joinColumns" : [ "City", "Servicer", "State" ],
+        "isRecommended" : true,
+        "properties" : {
+          "columnsSelector" : [ "City", "Servicer", "State" ],
+          "conditions" : [ {
+            "alias" : "mortgage_west_anya",
+            "expression" : "(((tar_troubled_mortgages.City = mortgage_west_anya.City) AND (tar_troubled_mortgages.Servicer = mortgage_west_anya.Servicer)) AND (tar_troubled_mortgages.State = mortgage_west_anya.State))",
+            "joinType" : "inner"
+          } ],
+          "expressions" : [ {
+            "alias" : "Account",
+            "expression" : "mortgage_west_anya.Account"
+          }, {
+            "alias" : "Property Type",
+            "expression" : "mortgage_west_anya.`Property Type`"
+          }, {
+            "alias" : "Servicer Type",
+            "expression" : "mortgage_west_anya.`Servicer Type`"
+          }, {
+            "alias" : "Loan Type",
+            "expression" : "mortgage_west_anya.`Loan Type`"
+          }, {
+            "alias" : "UnPaid Balance",
+            "expression" : "mortgage_west_anya.`UnPaid Balance`"
+          }, {
+            "alias" : "0",
+            "expression" : "mortgage_west_anya.`0`"
+          }, {
+            "alias" : "30",
+            "expression" : "mortgage_west_anya.`30`"
+          }, {
+            "alias" : "60",
+            "expression" : "mortgage_west_anya.`60`"
+          }, {
+            "alias" : "90",
+            "expression" : "mortgage_west_anya.`90`"
+          }, {
+            "alias" : "REO",
+            "expression" : "mortgage_west_anya.REO"
+          }, {
+            "alias" : "Current Prop Value",
+            "expression" : "mortgage_west_anya.`Current Prop Value`"
+          }, {
+            "alias" : "LTV",
+            "expression" : "mortgage_west_anya.LTV"
+          }, {
+            "alias" : "Avg OEP",
+            "expression" : "mortgage_west_anya.`Avg OEP`"
+          }, {
+            "alias" : "Unemployment",
+            "expression" : "mortgage_west_anya.Unemployment"
+          }, {
+            "alias" : "Avg Values",
+            "expression" : "mortgage_west_anya.`Avg Values`"
+          }, {
+            "alias" : "Inventory",
+            "expression" : "mortgage_west_anya.Inventory"
+          }, {
+            "alias" : "Days on Market",
+            "expression" : "mortgage_west_anya.`Days on Market`"
+          }, {
+            "alias" : "State",
+            "expression" : "tar_troubled_mortgages.State"
+          }, {
+            "alias" : "PropertyType",
+            "expression" : "tar_troubled_mortgages.PropertyType"
+          }, {
+            "alias" : "UnPaidBalance",
+            "expression" : "tar_troubled_mortgages.UnPaidBalance"
+          }, {
+            "alias" : "Servicer",
+            "expression" : "tar_troubled_mortgages.Servicer"
+          }, {
+            "alias" : "CurrentPropValue",
+            "expression" : "tar_troubled_mortgages.CurrentPropValue"
+          }, {
+            "alias" : "LoanStatus",
+            "expression" : "tar_troubled_mortgages.LoanStatus"
+          }, {
+            "alias" : "ServicerType",
+            "expression" : "tar_troubled_mortgages.ServicerType"
+          }, {
+            "alias" : "UPB_to_Value_Ratio",
+            "expression" : "tar_troubled_mortgages.UPB_to_Value_Ratio"
+          }, {
+            "alias" : "PropID",
+            "expression" : "tar_troubled_mortgages.PropID"
+          }, {
+            "alias" : "City",
+            "expression" : "tar_troubled_mortgages.City"
+          }, {
+            "alias" : "LoanType",
+            "expression" : "tar_troubled_mortgages.LoanType"
+          } ],
+          "headAlias" : "datasets/mortgage_west_anya"
+        }
+      } ]
+    }, {
+      "sourceLabel" : "mortgage_east_loandemo",
+      "sourceDatasetId" : "datasets/mortgage_east_loandemo",
+      "canJoinWith" : [ {
+        "processLabel" : "tar_troubled_mortgages",
+        "processId" : "WvDvcGFNvfxWQODLPs8Wc$$hHso6b9sYnq8TTBe_lcHD",
+        "joinColumns" : [ "City", "Servicer", "State" ],
+        "isRecommended" : true,
+        "properties" : {
+          "columnsSelector" : [ "City", "Servicer", "State" ],
+          "conditions" : [ {
+            "alias" : "mortgage_east_loandemo",
+            "expression" : "(((tar_troubled_mortgages.City = mortgage_east_loandemo.City) AND (tar_troubled_mortgages.Servicer = mortgage_east_loandemo.Servicer)) AND (tar_troubled_mortgages.State = mortgage_east_loandemo.State))",
+            "joinType" : "inner"
+          } ],
+          "expressions" : [ {
+            "alias" : "Property Type",
+            "expression" : "mortgage_east_loandemo.`Property Type`"
+          }, {
+            "alias" : "Servicer Type",
+            "expression" : "mortgage_east_loandemo.`Servicer Type`"
+          }, {
+            "alias" : "Loan Type",
+            "expression" : "mortgage_east_loandemo.`Loan Type`"
+          }, {
+            "alias" : "UnPaid Balance",
+            "expression" : "mortgage_east_loandemo.`UnPaid Balance`"
+          }, {
+            "alias" : "Current Prop Value",
+            "expression" : "mortgage_east_loandemo.`Current Prop Value`"
+          }, {
+            "alias" : "Loan Status",
+            "expression" : "mortgage_east_loandemo.`Loan Status`"
+          }, {
+            "alias" : "State",
+            "expression" : "tar_troubled_mortgages.State"
+          }, {
+            "alias" : "PropertyType",
+            "expression" : "tar_troubled_mortgages.PropertyType"
+          }, {
+            "alias" : "UnPaidBalance",
+            "expression" : "tar_troubled_mortgages.UnPaidBalance"
+          }, {
+            "alias" : "Servicer",
+            "expression" : "tar_troubled_mortgages.Servicer"
+          }, {
+            "alias" : "CurrentPropValue",
+            "expression" : "tar_troubled_mortgages.CurrentPropValue"
+          }, {
+            "alias" : "LoanStatus",
+            "expression" : "tar_troubled_mortgages.LoanStatus"
+          }, {
+            "alias" : "ServicerType",
+            "expression" : "tar_troubled_mortgages.ServicerType"
+          }, {
+            "alias" : "UPB_to_Value_Ratio",
+            "expression" : "tar_troubled_mortgages.UPB_to_Value_Ratio"
+          }, {
+            "alias" : "PropID",
+            "expression" : "tar_troubled_mortgages.PropID"
+          }, {
+            "alias" : "City",
+            "expression" : "tar_troubled_mortgages.City"
+          }, {
+            "alias" : "LoanType",
+            "expression" : "tar_troubled_mortgages.LoanType"
+          } ],
+          "headAlias" : "datasets/mortgage_east_loandemo"
+        }
+      } ]
+    }, {
+      "sourceLabel" : "csv_by_state_analysis_anya",
+      "sourceDatasetId" : "datasets/csv_by_state_analysis_anya",
+      "canJoinWith" : [ {
+        "processLabel" : "tar_troubled_mortgages",
+        "processId" : "WvDvcGFNvfxWQODLPs8Wc$$hHso6b9sYnq8TTBe_lcHD",
+        "joinColumns" : [ "State", "UPB_to_Value_Ratio" ],
+        "isRecommended" : false,
+        "properties" : {
+          "columnsSelector" : [ "State", "UPB_to_Value_Ratio" ],
+          "conditions" : [ {
+            "alias" : "csv_by_state_analysis_anya",
+            "expression" : "((tar_troubled_mortgages.State = csv_by_state_analysis_anya.State) AND (tar_troubled_mortgages.UPB_to_Value_Ratio = csv_by_state_analysis_anya.UPB_to_Value_Ratio))",
+            "joinType" : "inner"
+          } ],
+          "expressions" : [ {
+            "alias" : "prop_count",
+            "expression" : "csv_by_state_analysis_anya.prop_count"
+          }, {
+            "alias" : "State",
+            "expression" : "tar_troubled_mortgages.State"
+          }, {
+            "alias" : "PropertyType",
+            "expression" : "tar_troubled_mortgages.PropertyType"
+          }, {
+            "alias" : "UnPaidBalance",
+            "expression" : "tar_troubled_mortgages.UnPaidBalance"
+          }, {
+            "alias" : "Servicer",
+            "expression" : "tar_troubled_mortgages.Servicer"
+          }, {
+            "alias" : "CurrentPropValue",
+            "expression" : "tar_troubled_mortgages.CurrentPropValue"
+          }, {
+            "alias" : "LoanStatus",
+            "expression" : "tar_troubled_mortgages.LoanStatus"
+          }, {
+            "alias" : "ServicerType",
+            "expression" : "tar_troubled_mortgages.ServicerType"
+          }, {
+            "alias" : "UPB_to_Value_Ratio",
+            "expression" : "tar_troubled_mortgages.UPB_to_Value_Ratio"
+          }, {
+            "alias" : "PropID",
+            "expression" : "tar_troubled_mortgages.PropID"
+          }, {
+            "alias" : "City",
+            "expression" : "tar_troubled_mortgages.City"
+          }, {
+            "alias" : "LoanType",
+            "expression" : "tar_troubled_mortgages.LoanType"
+          } ],
+          "headAlias" : "datasets/csv_by_state_analysis_anya"
+        }
+      } ]
+    }, {
+      "sourceLabel" : "tbl_all_mortgages",
+      "sourceDatasetId" : "datasets/tbl_all_mortgages",
+      "canJoinWith" : [ {
+        "processLabel" : "tar_troubled_mortgages",
+        "processId" : "WvDvcGFNvfxWQODLPs8Wc$$hHso6b9sYnq8TTBe_lcHD",
+        "joinColumns" : [ "City", "LoanStatus", "LoanType" ],
+        "isRecommended" : false,
+        "properties" : {
+          "columnsSelector" : [ "City", "LoanStatus", "LoanType" ],
+          "conditions" : [ {
+            "alias" : "tbl_all_mortgages",
+            "expression" : "(((tar_troubled_mortgages.City = tbl_all_mortgages.City) AND (tar_troubled_mortgages.LoanStatus = tbl_all_mortgages.LoanStatus)) AND (tar_troubled_mortgages.LoanType = tbl_all_mortgages.LoanType))",
+            "joinType" : "inner"
+          } ],
+          "expressions" : [ {
+            "alias" : "UPBtoValueRatio",
+            "expression" : "tbl_all_mortgages.UPBtoValueRatio"
+          }, {
+            "alias" : "State",
+            "expression" : "tar_troubled_mortgages.State"
+          }, {
+            "alias" : "PropertyType",
+            "expression" : "tar_troubled_mortgages.PropertyType"
+          }, {
+            "alias" : "UnPaidBalance",
+            "expression" : "tar_troubled_mortgages.UnPaidBalance"
+          }, {
+            "alias" : "Servicer",
+            "expression" : "tar_troubled_mortgages.Servicer"
+          }, {
+            "alias" : "CurrentPropValue",
+            "expression" : "tar_troubled_mortgages.CurrentPropValue"
+          }, {
+            "alias" : "LoanStatus",
+            "expression" : "tar_troubled_mortgages.LoanStatus"
+          }, {
+            "alias" : "ServicerType",
+            "expression" : "tar_troubled_mortgages.ServicerType"
+          }, {
+            "alias" : "UPB_to_Value_Ratio",
+            "expression" : "tar_troubled_mortgages.UPB_to_Value_Ratio"
+          }, {
+            "alias" : "PropID",
+            "expression" : "tar_troubled_mortgages.PropID"
+          }, {
+            "alias" : "City",
+            "expression" : "tar_troubled_mortgages.City"
+          }, {
+            "alias" : "LoanType",
+            "expression" : "tar_troubled_mortgages.LoanType"
+          } ],
+          "headAlias" : "datasets/tbl_all_mortgages"
+        }
+      } ]
+    }, {
+      "sourceLabel" : "csv_by_state_analysis_loandemo",
+      "sourceDatasetId" : "datasets/csv_by_state_analysis_loandemo",
+      "canJoinWith" : [ {
+        "processLabel" : "tar_troubled_mortgages",
+        "processId" : "WvDvcGFNvfxWQODLPs8Wc$$hHso6b9sYnq8TTBe_lcHD",
+        "joinColumns" : [ "State", "UPB_to_Value_Ratio" ],
+        "isRecommended" : false,
+        "properties" : {
+          "columnsSelector" : [ "State", "UPB_to_Value_Ratio" ],
+          "conditions" : [ {
+            "alias" : "csv_by_state_analysis_loandemo",
+            "expression" : "((tar_troubled_mortgages.State = csv_by_state_analysis_loandemo.State) AND (tar_troubled_mortgages.UPB_to_Value_Ratio = csv_by_state_analysis_loandemo.UPB_to_Value_Ratio))",
+            "joinType" : "inner"
+          } ],
+          "expressions" : [ {
+            "alias" : "prop_count",
+            "expression" : "csv_by_state_analysis_loandemo.prop_count"
+          }, {
+            "alias" : "State",
+            "expression" : "tar_troubled_mortgages.State"
+          }, {
+            "alias" : "PropertyType",
+            "expression" : "tar_troubled_mortgages.PropertyType"
+          }, {
+            "alias" : "UnPaidBalance",
+            "expression" : "tar_troubled_mortgages.UnPaidBalance"
+          }, {
+            "alias" : "Servicer",
+            "expression" : "tar_troubled_mortgages.Servicer"
+          }, {
+            "alias" : "CurrentPropValue",
+            "expression" : "tar_troubled_mortgages.CurrentPropValue"
+          }, {
+            "alias" : "LoanStatus",
+            "expression" : "tar_troubled_mortgages.LoanStatus"
+          }, {
+            "alias" : "ServicerType",
+            "expression" : "tar_troubled_mortgages.ServicerType"
+          }, {
+            "alias" : "UPB_to_Value_Ratio",
+            "expression" : "tar_troubled_mortgages.UPB_to_Value_Ratio"
+          }, {
+            "alias" : "PropID",
+            "expression" : "tar_troubled_mortgages.PropID"
+          }, {
+            "alias" : "City",
+            "expression" : "tar_troubled_mortgages.City"
+          }, {
+            "alias" : "LoanType",
+            "expression" : "tar_troubled_mortgages.LoanType"
+          } ],
+          "headAlias" : "datasets/csv_by_state_analysis_loandemo"
+        }
+      } ]
+    } ],
     "language" : "python",
-    "fabricId" : "9631",
+    "fabricId" : "183",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -48,11 +750,11 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
     "dependentProjectExternalDependencies" : [ {
-      "projectUID" : "12654",
+      "projectUID" : "224",
       "projectName" : "ProphecySparkBasicsPython",
       "externalDependencies" : [ ]
     }, {
-      "projectUID" : "12655",
+      "projectUID" : "225",
       "projectName" : "ProphecyWarehousePython",
       "externalDependencies" : [ ]
     } ],
@@ -68,12 +770,6 @@
     "configurationVersion" : "v2"
   },
   "connections" : [ {
-    "id" : "yOl82ftfQtTunjvjaXkzC$$_YpsAKN6p-SvoDGvhMZYG",
-    "source" : "OCH1iiHJ1SQWHBuA31wRY$$2tmUYpYs9fep22XfBXOQn",
-    "sourcePort" : "QKhkKTTn1WgBVh1pqOmY6$$rLn0VKaPKOsVTyWMScfFi",
-    "target" : "jCQEsS9msA3bbt9-eFKUH$$9AbKVqy0tUnVw8yMYvzM_",
-    "targetPort" : "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4"
-  }, {
     "id" : "o9G8coLthRGmfkWgQmQut$$IkGUBTal4IglqPY8lKOgR",
     "source" : "5rYLIPuYdPwhnsTnYvQqY$$qr-hEEqmlp-bkGYgFSteH",
     "sourcePort" : "UJvxmOmVvEUvmoiSagclV$$b7cQvbvhHV8_KqqE_gtIM",
@@ -86,17 +782,23 @@
     "target" : "yApcwPxlKgtNRJZVrIFdB$$et5_NdiULVbMRwP5gA2PP",
     "targetPort" : "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX"
   }, {
-    "id" : "W_NYBErIOhKJi1nQOoJfF$$h5mcbiTFKM3j2qrfcKnsa",
-    "source" : "yApcwPxlKgtNRJZVrIFdB$$et5_NdiULVbMRwP5gA2PP",
-    "sourcePort" : "yIwH0j2hyDsFFut2t3iDU$$_N5l1mmMewtNfwETZYlVz",
-    "target" : "WuoCheKCfhwDB4lmKbFwv$$ktlxlgOPHQTXIiwe7-jpH",
-    "targetPort" : "Vf7w1eUr_O4TjRLUr-PGa$$Nz9bs_lY-pFUB1-FqclSc"
+    "id" : "8gG6DpaQeFECuOkXK8GD6",
+    "source" : "0_Qt3dokz2sb5EXd1BCDN$$_3zf4BtugQruvfDmhtx3j",
+    "sourcePort" : "GDHuWuj-F__uPD_X0PcQh$$lGb5vEOubNQ4g_hfD4OKB",
+    "target" : "jCQEsS9msA3bbt9-eFKUH$$9AbKVqy0tUnVw8yMYvzM_",
+    "targetPort" : "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4"
   }, {
-    "id" : "aEqK0pZvZZfURoqG0KVs6$$Tbqra7c_ooX8XuGtwoyaa",
-    "source" : "WvDvcGFNvfxWQODLPs8Wc$$hHso6b9sYnq8TTBe_lcHD",
-    "sourcePort" : "gkwg85vMmlQZK4kBDog36$$uQ1UbRawVqnncQH4S6_ab",
+    "id" : "v7SwWjjB7pLbeyTfPYXk-",
+    "source" : "6PXn5gZYV7ajAi7cLazol$$6EyOyE1ilL6ioaRRwO4RX",
+    "sourcePort" : "0nK8VZ1p-Lr5jpPc2hw18$$ja6dpOSd19sh3MZfQB5PY",
     "target" : "5rYLIPuYdPwhnsTnYvQqY$$qr-hEEqmlp-bkGYgFSteH",
     "targetPort" : "sFGbes2XYQU-rQ9T9KIzS$$OPoPvUav8bWnaEJ_JJ8c7"
+  }, {
+    "id" : "jfATe00tCnrWMAzHM6xx1",
+    "source" : "yApcwPxlKgtNRJZVrIFdB$$et5_NdiULVbMRwP5gA2PP",
+    "sourcePort" : "yIwH0j2hyDsFFut2t3iDU$$_N5l1mmMewtNfwETZYlVz",
+    "target" : "cqbYHHj_DbJLx92rux2DZ$$lmshW8vwf46oNrjLCssZ8",
+    "targetPort" : "_VjqgqLIG-Mgd4yMzX78H$$BxtUC7UH-N0qTZ0sSMCOS"
   } ],
   "processes" : {
     "WvDvcGFNvfxWQODLPs8Wc$$hHso6b9sYnq8TTBe_lcHD" : {
@@ -180,7 +882,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Unique identifier for each property in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each property in the dataset.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -189,7 +891,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the city where the property is located. This column stores values of string data type and provides information about the geographical location of the property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -205,9 +907,9 @@
             }, {
               "name" : "PropertyType",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Specifies the type of property associated with each mortgage. It stores values of string data type, indicating whether the property is a single-family home, multi-family home, condominium, or other type of property. This column provides important information about the characteristics of the properties associated with each mortgage.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -216,7 +918,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the company or organization that services the mortgage loan. This column stores string values and provides information about the entity responsible for managing the loan payments and other related activities.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -225,48 +927,48 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the type of servicer responsible for managing the mortgage loan. The values in this column are of string data type and provide information about the organization or entity responsible for servicing the loan, such as a bank or mortgage company. This column can be used to track the performance of different types of servicers and their impact on loan status and other metrics.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "LoanType",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Specifies the type of loan associated with each property. It stores values of string data type, indicating the type of loan taken by the property owner. This column provides information about the terms and conditions of the loan, such as interest rates and payment schedules.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "UnPaidBalance",
-              "type" : "double",
-              "nullable" : true,
+              "type" : "string",
+              "nullable" : false,
               "metadata" : {
-                "description" : "The outstanding balance on the mortgage loan for a particular property. This column stores numerical values in double data type, indicating the amount of money that the borrower still owes on their mortgage loan. It is an important metric for lenders to assess the risk associated with a particular loan.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "CurrentPropValue",
-              "type" : "double",
-              "nullable" : true,
+              "type" : "string",
+              "nullable" : false,
               "metadata" : {
-                "description" : "The current market value of the property associated with the mortgage. This column stores numerical values in double data type, indicating the estimated worth of the property at the time of data collection. It provides an insight into the value of the property and its potential for generating revenue.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "LoanStatus",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Indicates the current status of the loan associated with the property. The values in this column are of string data type and provide information on whether the loan is in good standing, delinquent, or in default. This column is important for tracking the overall health of the mortgage portfolio.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "UPB_to_Value_Ratio",
+              "name" : "UPBtoValueRatio",
               "type" : "double",
               "nullable" : true,
               "metadata" : {
@@ -296,7 +998,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The first name of each customer is stored in this column. It stores values of string data type and provides a way to identify each customer by their first name.",
+                "description" : "The first name of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -305,7 +1007,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Stores the last name of each customer. The values in this column are of string data type and provide a way to identify customers based on their family name. This column is part of the customers_nv dataset schema.",
+                "description" : "The last name of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -314,25 +1016,25 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the gender of each customer. It stores values of string data type, either 'Male' or 'Female', providing a way to categorize customers based on their gender.",
+                "description" : "The gender of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "Age",
-              "type" : "string",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "Age of the customer in years. It stores numerical values in string data type, indicating the age of each customer. This column provides information about the age distribution of customers in the dataset.",
+                "description" : "The age of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "Income",
-              "type" : "string",
+              "type" : "double",
               "nullable" : true,
               "metadata" : {
-                "description" : "This column represents the income of each customer. It stores numerical values in string data type, indicating the estimated income of individual customers. This information can be used to segment customers based on their purchasing power and target them with appropriate marketing strategies.",
+                "description" : "The annual income of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -341,7 +1043,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Stores the phone number of each customer. The values in this column are of string data type and provide a way to contact each customer. It is important to note that this column may contain different formats of phone numbers, such as with or without country codes or dashes.",
+                "description" : "The contact phone number of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -350,16 +1052,16 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Stores the email address of each customer. It is a string data type column that contains unique email addresses for each customer. This column can be used to communicate with customers and send promotional emails or newsletters.",
+                "description" : "The email address of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "Zip Code",
-              "type" : "string",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "The postal code of the customer's address. It stores a string value that represents the zip code of the customer's location. This column can be used to group customers by their geographical location.",
+                "description" : "The postal code of the customer's address",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -368,7 +1070,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Credit rating of each customer. It stores a string value indicating the creditworthiness of each customer. The values in this column can range from poor to excellent, and are used to assess the risk associated with lending money to each customer.",
+                "description" : "The rating assigned to the customer's creditworthiness",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -549,7 +1251,7 @@
           "target" : "UPB_to_Value_Ratio",
           "expression" : {
             "format" : "sql",
-            "expression" : "in0.UPB_to_Value_Ratio"
+            "expression" : "in0.UPBtoValueRatio"
           },
           "description" : "",
           "_row_id" : null
@@ -566,14 +1268,14 @@
           "propagateColumns" : false
         } ],
         "allIn1" : null,
-        "activeTab" : "expressions",
-        "columnsSelector" : [ "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##PropID", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropID", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##CurrentPropValue", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##UPB_to_Value_Ratio", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Email Address", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Phone Number", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##Servicer", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##LoanStatus", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropID", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##City", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##LoanType", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##First_Name", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Income", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##UnPaidBalance", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropertyType", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Gender", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Zip Code", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Age", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Credit Rating", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##ServicerType", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Last_Name", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##State" ],
+        "activeTab" : "advanced",
+        "columnsSelector" : [ "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##PropID", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropID", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##CurrentPropValue", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Income", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##UnPaidBalance", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Last_Name", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##City", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##UPBtoValueRatio", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Phone Number", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##LoanType", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##ServicerType", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Zip Code", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Gender", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##Servicer", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Credit Rating", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropID", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##PropertyType", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##First_Name", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##LoanStatus", "TosWWTHuuqU_i3Kof6gwR$$t-W-eoXucWpMGjVYgOz3o##State", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Email Address", "eJVeCdceT4aH0VGbNyslK$$MLwa6RsUNPTMOuCPEyIRX##Age" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=12654&path=gems/Join",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=224&path=gems/Join",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -599,10 +1301,10 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "Cust ID",
-              "type" : "string",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "Unique identifier for each customer in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each customer in the dataset.",
+                "description" : "The unique identifier for the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -611,7 +1313,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The first name of each customer is stored in this column. It stores values of string data type and provides a way to identify each customer by their first name.",
+                "description" : "The first name of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -620,7 +1322,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Stores the last name of each customer. The values in this column are of string data type and provide a way to identify customers based on their family name. This column is part of the customers_nv dataset schema.",
+                "description" : "The last name of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -629,25 +1331,25 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the gender of each customer. It stores values of string data type, either 'Male' or 'Female', providing a way to categorize customers based on their gender.",
+                "description" : "The gender of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "Age",
-              "type" : "string",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "Age of the customer in years. It stores numerical values in string data type, indicating the age of each customer. This column provides information about the age distribution of customers in the dataset.",
+                "description" : "The age of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "Income",
-              "type" : "string",
+              "type" : "double",
               "nullable" : true,
               "metadata" : {
-                "description" : "This column represents the income of each customer. It stores numerical values in string data type, indicating the estimated income of individual customers. This information can be used to segment customers based on their purchasing power and target them with appropriate marketing strategies.",
+                "description" : "The annual income of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -656,7 +1358,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Stores the phone number of each customer. The values in this column are of string data type and provide a way to contact each customer. It is important to note that this column may contain different formats of phone numbers, such as with or without country codes or dashes.",
+                "description" : "The contact phone number of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -665,16 +1367,16 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Stores the email address of each customer. It is a string data type column that contains unique email addresses for each customer. This column can be used to communicate with customers and send promotional emails or newsletters.",
+                "description" : "The email address of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "Zip Code",
-              "type" : "string",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "The postal code of the customer's address. It stores a string value that represents the zip code of the customer's location. This column can be used to group customers by their geographical location.",
+                "description" : "The postal code of the customer's address",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -683,7 +1385,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Credit rating of each customer. It stores a string value indicating the creditworthiness of each customer. The values in this column can range from poor to excellent, and are used to assess the risk associated with lending money to each customer.",
+                "description" : "The rating assigned to the customer's creditworthiness",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -777,7 +1479,7 @@
         "columnsSelector" : [ "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Age", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Last_Name", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##First_Name", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Cust ID", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Zip Code", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Email Address", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Gender", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Income", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Credit Rating", "agbiXqZKpahl74aSUCRHh$$AkbcmojuyYJjz3gVoaDs4##Phone Number" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=224&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -806,7 +1508,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Unique identifier for each property in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each property in the dataset.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -815,7 +1517,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the city where the property is located. This column stores values of string data type and provides information about the geographical location of the property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -831,9 +1533,9 @@
             }, {
               "name" : "PropertyType",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Specifies the type of property associated with each mortgage. It stores values of string data type, indicating whether the property is a single-family home, multi-family home, condominium, or other type of property. This column provides important information about the characteristics of the properties associated with each mortgage.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -842,7 +1544,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the company or organization that services the mortgage loan. This column stores string values and provides information about the entity responsible for managing the loan payments and other related activities.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -851,48 +1553,48 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the type of servicer responsible for managing the mortgage loan. The values in this column are of string data type and provide information about the organization or entity responsible for servicing the loan, such as a bank or mortgage company. This column can be used to track the performance of different types of servicers and their impact on loan status and other metrics.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "LoanType",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Specifies the type of loan associated with each property. It stores values of string data type, indicating the type of loan taken by the property owner. This column provides information about the terms and conditions of the loan, such as interest rates and payment schedules.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "UnPaidBalance",
-              "type" : "double",
-              "nullable" : true,
+              "type" : "string",
+              "nullable" : false,
               "metadata" : {
-                "description" : "The outstanding balance on the mortgage loan for a particular property. This column stores numerical values in double data type, indicating the amount of money that the borrower still owes on their mortgage loan. It is an important metric for lenders to assess the risk associated with a particular loan.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "CurrentPropValue",
-              "type" : "double",
-              "nullable" : true,
+              "type" : "string",
+              "nullable" : false,
               "metadata" : {
-                "description" : "The current market value of the property associated with the mortgage. This column stores numerical values in double data type, indicating the estimated worth of the property at the time of data collection. It provides an insight into the value of the property and its potential for generating revenue.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "LoanStatus",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Indicates the current status of the loan associated with the property. The values in this column are of string data type and provide information on whether the loan is in good standing, delinquent, or in default. This column is important for tracking the overall health of the mortgage portfolio.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "UPB_to_Value_Ratio",
+              "name" : "UPBtoValueRatio",
               "type" : "double",
               "nullable" : true,
               "metadata" : {
@@ -920,7 +1622,7 @@
         }
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=12654&path=gems/Filter",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=224&path=gems/Filter",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -930,8 +1632,8 @@
       "metadata" : {
         "label" : "mtg_assist_prog_HAF_csv",
         "slug" : "mtg_assist_prog_HAF_csv",
-        "x" : 1400,
-        "y" : 640,
+        "x" : 1440,
+        "y" : 800,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -941,6 +1643,89 @@
       "ports" : {
         "inputs" : [ {
           "id" : "Vf7w1eUr_O4TjRLUr-PGa$$Nz9bs_lY-pFUB1-FqclSc",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/myg_assist_program_csv"
+      }
+    },
+    "6PXn5gZYV7ajAi7cLazol$$6EyOyE1ilL6ioaRRwO4RX" : {
+      "id" : "6PXn5gZYV7ajAi7cLazol$$6EyOyE1ilL6ioaRRwO4RX",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "tbl_troubled_mortgages",
+        "slug" : "tbl_troubled_mortgages",
+        "x" : 800,
+        "y" : 380,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "0nK8VZ1p-Lr5jpPc2hw18$$ja6dpOSd19sh3MZfQB5PY",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/tbl_troubled_mortgages"
+      }
+    },
+    "0_Qt3dokz2sb5EXd1BCDN$$_3zf4BtugQruvfDmhtx3j" : {
+      "id" : "0_Qt3dokz2sb5EXd1BCDN$$_3zf4BtugQruvfDmhtx3j",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customers_nv_loandemo",
+        "slug" : "customers_nv_loandemo",
+        "x" : 800,
+        "y" : 920,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "GDHuWuj-F__uPD_X0PcQh$$lGb5vEOubNQ4g_hfD4OKB",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/customers_nv_loandemo"
+      }
+    },
+    "cqbYHHj_DbJLx92rux2DZ$$lmshW8vwf46oNrjLCssZ8" : {
+      "id" : "cqbYHHj_DbJLx92rux2DZ$$lmshW8vwf46oNrjLCssZ8",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "mtg_assist_prog_HAF_csv_loandemo",
+        "slug" : "mtg_assist_prog_HAF_csv_loandemo",
+        "x" : 1440,
+        "y" : 640,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Exports the DataFrame to a CSV file with specified options, including header, separator, and overwrite mode.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "_VjqgqLIG-Mgd4yMzX78H$$BxtUC7UH-N0qTZ0sSMCOS",
           "slug" : "in0",
           "schema" : {
             "type" : "struct",
@@ -949,7 +1734,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Unique identifier for each property in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each property in the dataset.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -958,7 +1743,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The first name of each customer is stored in this column. It stores values of string data type and provides a way to identify each customer by their first name.",
+                "description" : "The first name of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -967,7 +1752,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Stores the last name of each customer. The values in this column are of string data type and provide a way to identify customers based on their family name. This column is part of the customers_nv dataset schema.",
+                "description" : "The last name of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -976,25 +1761,25 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the gender of each customer. It stores values of string data type, either 'Male' or 'Female', providing a way to categorize customers based on their gender.",
+                "description" : "The gender of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "Age",
-              "type" : "string",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "Age of the customer in years. It stores numerical values in string data type, indicating the age of each customer. This column provides information about the age distribution of customers in the dataset.",
+                "description" : "The age of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "Income",
-              "type" : "string",
+              "type" : "double",
               "nullable" : true,
               "metadata" : {
-                "description" : "This column represents the income of each customer. It stores numerical values in string data type, indicating the estimated income of individual customers. This information can be used to segment customers based on their purchasing power and target them with appropriate marketing strategies.",
+                "description" : "The annual income of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1003,7 +1788,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Stores the phone number of each customer. The values in this column are of string data type and provide a way to contact each customer. It is important to note that this column may contain different formats of phone numbers, such as with or without country codes or dashes.",
+                "description" : "The contact phone number of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1012,7 +1797,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Stores the email address of each customer. It is a string data type column that contains unique email addresses for each customer. This column can be used to communicate with customers and send promotional emails or newsletters.",
+                "description" : "The email address of the customer",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1021,7 +1806,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the city where the property is located. This column stores values of string data type and provides information about the geographical location of the property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1036,10 +1821,10 @@
               }
             }, {
               "name" : "Zip Code",
-              "type" : "string",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "The postal code of the customer's address. It stores a string value that represents the zip code of the customer's location. This column can be used to group customers by their geographical location.",
+                "description" : "The postal code of the customer's address",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1048,16 +1833,16 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Credit rating of each customer. It stores a string value indicating the creditworthiness of each customer. The values in this column can range from poor to excellent, and are used to assess the risk associated with lending money to each customer.",
+                "description" : "The rating assigned to the customer's creditworthiness",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "PropertyType",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Specifies the type of property associated with each mortgage. It stores values of string data type, indicating whether the property is a single-family home, multi-family home, condominium, or other type of property. This column provides important information about the characteristics of the properties associated with each mortgage.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1066,7 +1851,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the company or organization that services the mortgage loan. This column stores string values and provides information about the entity responsible for managing the loan payments and other related activities.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1075,43 +1860,43 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the type of servicer responsible for managing the mortgage loan. The values in this column are of string data type and provide information about the organization or entity responsible for servicing the loan, such as a bank or mortgage company. This column can be used to track the performance of different types of servicers and their impact on loan status and other metrics.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "LoanType",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Specifies the type of loan associated with each property. It stores values of string data type, indicating the type of loan taken by the property owner. This column provides information about the terms and conditions of the loan, such as interest rates and payment schedules.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "UnPaidBalance",
-              "type" : "double",
-              "nullable" : true,
+              "type" : "string",
+              "nullable" : false,
               "metadata" : {
-                "description" : "The outstanding balance on the mortgage loan for a particular property. This column stores numerical values in double data type, indicating the amount of money that the borrower still owes on their mortgage loan. It is an important metric for lenders to assess the risk associated with a particular loan.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "CurrentPropValue",
-              "type" : "double",
-              "nullable" : true,
+              "type" : "string",
+              "nullable" : false,
               "metadata" : {
-                "description" : "The current market value of the property associated with the mortgage. This column stores numerical values in double data type, indicating the estimated worth of the property at the time of data collection. It provides an insight into the value of the property and its potential for generating revenue.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "LoanStatus",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Indicates the current status of the loan associated with the property. The values in this column are of string data type and provide information on whether the loan is in good standing, delinquent, or in default. This column is important for tracking the overall health of the mortgage portfolio.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1134,7 +1919,7 @@
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "datasetId" : "datasets/myg_assist_program_csv"
+        "datasetId" : "datasets/mtg_assist_prog_HAF_csv_loandemo"
       }
     }
   },
@@ -1144,5 +1929,22 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.WuoCheKCfhwDB4lmKbFwv$$ktlxlgOPHQTXIiwe7-jpH.ports.inputs[0]",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Please connect input port in0",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
 }

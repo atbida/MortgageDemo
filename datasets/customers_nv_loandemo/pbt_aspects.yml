@@ -1,0 +1,74 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: Cust ID
+    type: long
+    nullable: true
+    metadata:
+      description: The unique identifier for the customer
+      mappings: []
+      tags: []
+  - name: First_Name
+    type: string
+    nullable: true
+    metadata:
+      description: The first name of the customer
+      mappings: []
+      tags: []
+  - name: Last_Name
+    type: string
+    nullable: true
+    metadata:
+      description: The last name of the customer
+      mappings: []
+      tags: []
+  - name: Gender
+    type: string
+    nullable: true
+    metadata:
+      description: The gender of the customer
+      mappings: []
+      tags: []
+  - name: Age
+    type: long
+    nullable: true
+    metadata:
+      description: The age of the customer
+      mappings: []
+      tags: []
+  - name: Income
+    type: double
+    nullable: true
+    metadata:
+      description: The annual income of the customer
+      mappings: []
+      tags: []
+  - name: Phone Number
+    type: string
+    nullable: true
+    metadata:
+      description: The contact phone number of the customer
+      mappings: []
+      tags: []
+  - name: Email Address
+    type: string
+    nullable: true
+    metadata:
+      description: The email address of the customer
+      mappings: []
+      tags: []
+  - name: Zip Code
+    type: long
+    nullable: true
+    metadata:
+      description: The postal code of the customer's address
+      mappings: []
+      tags: []
+  - name: Credit Rating
+    type: string
+    nullable: true
+    metadata:
+      description: The rating assigned to the customer's creditworthiness
+      mappings: []
+      tags: []
