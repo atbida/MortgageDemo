@@ -24,7 +24,9 @@ schema:
     type: string
     nullable: true
     metadata:
-      description: ''
+      description: The state in which the property is located. It stores the two-letter
+        abbreviation of the state name and is of string data type. This column provides
+        information about the geographic location of the property.
       mappings: []
       tags: []
   - name: PropertyType
@@ -97,12 +99,5 @@ schema:
         The values in this column are of string data type and provide information
         on whether the loan is in good standing, delinquent, or in default. This column
         is important for tracking the overall health of the mortgage portfolio.
-      mappings: []
-      tags: []
-  - name: UPB_to_Value_Ratio
-    type: double
-    nullable: true
-    metadata:
-      description: ''
       mappings: []
       tags: []

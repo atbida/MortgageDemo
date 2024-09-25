@@ -7,17 +7,17 @@ from prophecy.utils import *
 from mortgage_analytics.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_csv_mortgage_east = csv_mortgage_east(spark)
-    df_csv_mortgage_west = csv_mortgage_west(spark)
-    df_clean_up_mortgage_west = clean_up_mortgage_west(spark, df_csv_mortgage_west)
-    df_union_east_west = union_east_west(spark, df_csv_mortgage_east, df_clean_up_mortgage_west)
+    df_mortgage_west_anya = mortgage_west_anya(spark)
+    df_clean_up_mortgage_west = clean_up_mortgage_west(spark, df_mortgage_west_anya)
+    df_mortgage_east_loandemo = mortgage_east_loandemo(spark)
+    df_union_east_west = union_east_west(spark, df_mortgage_east_loandemo, df_clean_up_mortgage_west)
     df_calculations = calculations(spark, df_union_east_west)
     df_troubled_mortgages = troubled_mortgages(spark, df_calculations)
     df_avg_upb_to_value_ratio_by_state = avg_upb_to_value_ratio_by_state(spark, df_troubled_mortgages)
     df_sort_by_state = sort_by_state(spark, df_avg_upb_to_value_ratio_by_state)
-    tbl_all_mortgages(spark, df_calculations)
-    tbl_troubled_mortgages(spark, df_troubled_mortgages)
-    csv_by_state_analysis(spark, df_sort_by_state)
+    csv_by_state_analysis_loandemo(spark, df_sort_by_state)
+    tbl_all_mortgages_1(spark, df_calculations)
+    tbl_troubled_mortgages_1(spark, df_troubled_mortgages)
 
 def main():
     spark = SparkSession.builder\

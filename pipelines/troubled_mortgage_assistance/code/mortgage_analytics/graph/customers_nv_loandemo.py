@@ -6,5 +6,5 @@ from prophecy.libs import typed_lit
 from mortgage_analytics.config.ConfigStore import *
 from mortgage_analytics.udfs.UDFs import *
 
-def tbl_troubled_mortgages(spark: SparkSession, in0: DataFrame):
-    in0.write.format("delta").mode("overwrite").saveAsTable("`bobwelshmer`.`mortgage_demo`.`troubled_mortgages`")
+def customers_nv_loandemo(spark: SparkSession) -> DataFrame:
+    return spark.read.table("`pipelinehub`.`anya`.`mortgage_customer_nv`")

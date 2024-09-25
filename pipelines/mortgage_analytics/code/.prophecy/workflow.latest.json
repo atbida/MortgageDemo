@@ -13,8 +13,9 @@
     },
     "id" : "1",
     "uri" : "pipelines/mortgage_analytics",
+    "sourceSuggestions" : [ ],
     "language" : "python",
-    "fabricId" : "9631",
+    "fabricId" : "183",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -48,11 +49,11 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
     "dependentProjectExternalDependencies" : [ {
-      "projectUID" : "12654",
+      "projectUID" : "224",
       "projectName" : "ProphecySparkBasicsPython",
       "externalDependencies" : [ ]
     }, {
-      "projectUID" : "12655",
+      "projectUID" : "225",
       "projectName" : "ProphecyWarehousePython",
       "externalDependencies" : [ ]
     } ],
@@ -68,18 +69,6 @@
     "configurationVersion" : "v2"
   },
   "connections" : [ {
-    "id" : "gySM67KyjzQ6ZRgumeIfS$$HEbUrKCRYlxuWUywCzXSB",
-    "source" : "4kqI7vslqwZUkg8g5eiyi$$IuxlRqsVksOhU3snnAewR",
-    "sourcePort" : "du2xrdKnRybrrvOjZxmF0$$XxzDtzgsC3ECLIamUQMux",
-    "target" : "7Qe6Ojpmv08DrC-pQ1buf$$-Xzq8vMnY51Qffb4zykXK",
-    "targetPort" : "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb"
-  }, {
-    "id" : "-Az4nCn0yIoE0dIxQ-ifo$$R87zAu9IhkTHulaGiL4fa",
-    "source" : "zyoB6ezFKyy2O8-m5hJvG$$bIf2_Q-tpYvZTjzMwyryh",
-    "sourcePort" : "_tUYWfc_JdpLPSS2GrE7y$$qyetxMr4IlCCNTrvkMFq-",
-    "target" : "ZO7G2UhdBKI8k_hpi7lN-$$23vqYRsVvpCezf8DIUjX5",
-    "targetPort" : "vtE-551HrOh8kevuUVU76$$ZTF-Yj49IXIHH3zoaibC5"
-  }, {
     "id" : "uwWsmWVZnApn6C4hixbMU$$gn57T-9VNWmx7RkNU1za4",
     "source" : "7Qe6Ojpmv08DrC-pQ1buf$$-Xzq8vMnY51Qffb4zykXK",
     "sourcePort" : "nyjDOYiX8_vMLdFtqkT8n$$_0QHxUyPHG-THBMBoBO2D",
@@ -91,12 +80,6 @@
     "sourcePort" : "XLr2InMU5ukHlykZIrw7R$$gVuAd3yrm9sN1pNTW79yR",
     "target" : "J4KACe_tc8QAvbktuvrHE$$gJWKp5QW9QFbf6RvDhewp",
     "targetPort" : "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io"
-  }, {
-    "id" : "8PRS0Fae1ok0niKMYKIe5$$PVGEZ0prWgFkOsvypX0Wx",
-    "source" : "J4KACe_tc8QAvbktuvrHE$$gJWKp5QW9QFbf6RvDhewp",
-    "sourcePort" : "xw5FE_hiOkzi7KuNcRLli$$uczrFSqV5sDgXQGv_ZWoF",
-    "target" : "BTIAO4TE3ms-mY3Hm2i6X$$WqSCbssnK4tNct2DQixoG",
-    "targetPort" : "72QUuM2T98XIP6g4hZGae$$4xCBJnx_Z4NOLwhWmAIXz"
   }, {
     "id" : "8OMvir6zJxF6nOIvNJdda",
     "source" : "J4KACe_tc8QAvbktuvrHE$$gJWKp5QW9QFbf6RvDhewp",
@@ -116,19 +99,98 @@
     "target" : "BZX62pq8yvJwIBIgbHSb8$$iF9TZK2cLuau6729CqEoZ",
     "targetPort" : "KP-wptQOdFsIhNQC2jgCb$$a8yvtL07Dvb0DKaf4_CZA"
   }, {
-    "id" : "MWn6mmL8YW1nmF-d6saSO$$PKkTwDDP4hXwljWZzgh5b",
+    "id" : "ijVWZlRONRpxPR5tQ5O_6",
     "source" : "BZX62pq8yvJwIBIgbHSb8$$iF9TZK2cLuau6729CqEoZ",
     "sourcePort" : "LzVVQnSuK-kjt2WL-25qb$$zGk2d77M0HDEGF8LZrI7d",
-    "target" : "hOXppsb1yhNdDEvHddY5q$$gGXPXzbmLGwEMUmO3gToo",
-    "targetPort" : "_KnDRMCrhD5B_hg7PK9e1$$CkimCwsNNOcllk3Ubefoe"
+    "target" : "A6mxDLV1zFQ74xd-4yfr1$$NMWIzypZqSlXvA6xuf6Bf",
+    "targetPort" : "Fwusz6I1nmnpwdM94IlDU$$v3u0D8DbEI5Z11-1H7kLL"
   }, {
-    "id" : "2teJBDm0CMPJynN9iMzCm",
+    "id" : "HUwwmtNUzBerufpGsmskx",
     "source" : "Xac5yWT3TYIwYSO-z0gkP$$2r2d29Sz5-lOdc_byv7DO",
     "sourcePort" : "LuraPjlDoh4L3vy7OronX$$iPXh4ldDVWY5z2ehZhwi6",
-    "target" : "2gL1LRLfPj0GCASqLZrff$$6t2dXNLZdNJk_ubxuhmNU",
-    "targetPort" : "gqPsNtlV07txa56ZxrjmN$$lJMgVXGVN0vNp52I4Q83z"
+    "target" : "xxAdWtG6vQZ4CsnyDb_pa$$Zl0jf15I8ql6TfVmhpifD",
+    "targetPort" : "oQ19n5gKMeQq_mNLQNddU$$Lzpit8vHfiFpYpeaAkS8B"
+  }, {
+    "id" : "X4j0mrAAsCivawW2WbzRf",
+    "source" : "J4KACe_tc8QAvbktuvrHE$$gJWKp5QW9QFbf6RvDhewp",
+    "sourcePort" : "xw5FE_hiOkzi7KuNcRLli$$uczrFSqV5sDgXQGv_ZWoF",
+    "target" : "BHvWdx5QZtXEuNWX2fl-Q$$Q95NeJwv29lo97Q4LQszj",
+    "targetPort" : "Hz8CbeQqT3Ems_JUt_PfV$$QmJWXBJntyQywMkghxPhx"
+  }, {
+    "id" : "IrUqQ6bYLaW9szb4I429-",
+    "source" : "ZLyJkBAtvtpz1rk6Gt7MK$$5FlZz4AfqUeSMecopElH9",
+    "sourcePort" : "CSkgKTfeixAks7UOfLSNc$$gplh4lf4SxK9D5bnPeiv8",
+    "target" : "7Qe6Ojpmv08DrC-pQ1buf$$-Xzq8vMnY51Qffb4zykXK",
+    "targetPort" : "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb"
+  }, {
+    "id" : "gs-PhCeW-GWqV_7Tcl55l",
+    "source" : "jz5ofC_KZQA_guJEs76kR$$x3TD35G9rQFYURiVQKhpG",
+    "sourcePort" : "cUTI_JAcfbipT2EPITgwE$$Z-GNNIfoaZn7qdXYzhuhV",
+    "target" : "ZO7G2UhdBKI8k_hpi7lN-$$23vqYRsVvpCezf8DIUjX5",
+    "targetPort" : "vtE-551HrOh8kevuUVU76$$ZTF-Yj49IXIHH3zoaibC5"
   } ],
   "processes" : {
+    "A6mxDLV1zFQ74xd-4yfr1$$NMWIzypZqSlXvA6xuf6Bf" : {
+      "id" : "A6mxDLV1zFQ74xd-4yfr1$$NMWIzypZqSlXvA6xuf6Bf",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "csv_by_state_analysis_loandemo",
+        "slug" : "csv_by_state_analysis_loandemo",
+        "x" : 1520,
+        "y" : -80,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Exports DataFrame to CSV format, storing the data in separate files based on the state column.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Fwusz6I1nmnpwdM94IlDU$$v3u0D8DbEI5Z11-1H7kLL",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "State",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "prop_count",
+              "type" : "long",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "UPB_to_Value_Ratio",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/csv_by_state_analysis_loandemo"
+      }
+    },
     "BZX62pq8yvJwIBIgbHSb8$$iF9TZK2cLuau6729CqEoZ" : {
       "id" : "BZX62pq8yvJwIBIgbHSb8$$iF9TZK2cLuau6729CqEoZ",
       "component" : "OrderBy",
@@ -199,7 +261,7 @@
         } ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=12654&path=gems/OrderBy",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=224&path=gems/OrderBy",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -228,7 +290,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Unique identifier for each mortgage account. It stores values of string data type and provides a way to uniquely identify each mortgage account in the dataset.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -237,7 +299,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the city where the property associated with the mortgage is located. This column stores values of string data type and provides information about the geographical location of the property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -246,7 +308,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The state in which the property associated with the mortgage is located. This column stores values of string data type and provides information about the geographical location of the property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -255,7 +317,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the type of property associated with each mortgage account. It stores values of string data type, providing information about the nature of the property, such as whether it is a single-family home, a condominium, or a commercial property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -264,7 +326,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the company or organization responsible for servicing the mortgage loan. This column stores string values and provides information about the entity responsible for collecting payments, managing the loan, and handling any issues related to the mortgage.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -273,7 +335,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "This column represents the type of servicer responsible for managing the mortgage loan. It stores categorical values in string data type, indicating the type of organization that services the loan, such as a bank or a mortgage company. This information can be useful in understanding the management and servicing of the mortgage loan.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -282,70 +344,70 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the type of loan taken by the borrower. It stores categorical values in string data type, providing information about the terms and conditions of the loan, such as fixed or adjustable interest rates, loan duration, and payment schedule.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "UnPaid Balance",
-              "type" : "double",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "The outstanding balance on a mortgage loan. This column stores the monetary value of the remaining balance on a mortgage loan that has not yet been paid off. The values in this column are of string data type and represent the amount of money owed by the borrower to the lender.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "0",
-              "type" : "integer",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "This column represents the number of days that a mortgage payment is overdue by 0 days. It stores numerical values in string data type, indicating the number of mortgages that are current and up to date with their payments.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "30",
-              "type" : "integer",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "Represents the number of days past due for a mortgage payment. It stores numerical values in string data type, indicating the number of days that a payment is overdue. A value of '30' in this column indicates that the payment is 30 days past due.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "60",
-              "type" : "integer",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "Represents the number of days a mortgage payment is overdue by 60 days or more. It stores numerical values in string data type, indicating the number of days a customer has missed their mortgage payment by 60 days or more. This column provides insight into the financial health of the mortgage portfolio and the likelihood of default by customers.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "90",
-              "type" : "integer",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "This column represents the number of days that a mortgage payment is overdue by 90 days or more. It stores numerical values in string data type, indicating the number of days that a borrower has failed to make a payment. This column is important for assessing the risk of default on a mortgage loan.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "REO",
-              "type" : "integer",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "REO stands for Real Estate Owned and refers to properties that have been foreclosed and are now owned by the mortgage lender. This column stores a binary value indicating whether a property is an REO or not. A value of 1 indicates that the property is an REO, while a value of 0 indicates that it is not.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "Current Prop Value",
-              "type" : "double",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "This column represents the current market value of the property associated with each mortgage account. It stores numerical values in string data type, indicating the estimated worth of the property at the time of data collection. This value is subject to change over time due to fluctuations in the real estate market.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -354,16 +416,16 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "LTV stands for Loan-to-Value ratio and represents the ratio of the loan amount to the appraised value of the property. It is expressed as a percentage and is used to determine the risk associated with a mortgage loan. This column stores numerical values in string data type, indicating the LTV ratio for each mortgage loan.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "Avg OEP",
-              "type" : "string",
+              "type" : "double",
               "nullable" : true,
               "metadata" : {
-                "description" : "This column represents the average occupancy expense per unit. It stores numerical values and provides insight into the average cost of maintaining and operating each unit in the property. The values in this column are of string data type.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -372,7 +434,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Represents the unemployment rate in the area where the property is located. It stores numerical values in string data type, indicating the percentage of unemployed individuals in the region. This column provides insight into the economic conditions of the area and can be used to analyze the impact of unemployment on mortgage defaults and foreclosures.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -381,7 +443,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "This column represents the average value of properties in the area where the mortgage is held. It stores numerical values in string data type, indicating the average property value in the region. This information can be useful in determining the overall value of the mortgage portfolio and assessing the risk associated with it.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -390,16 +452,16 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Inventory refers to the number of properties that are currently owned by the mortgage company. It stores numerical values and provides an insight into the company's current holdings. The values in this column are of string data type.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "Days on Market",
-              "type" : "string",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "The number of days a property has been listed on the market. This column stores numerical values and provides insight into the length of time it takes for a property to sell. It is an important metric for real estate professionals and investors to track market trends and property values.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -493,332 +555,35 @@
         "columnsSelector" : [ "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##City", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##30", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##90", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##0", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##UnPaid Balance", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##REO", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##60", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Current Prop Value", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Servicer", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Property Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##State", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Account", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Servicer Type", "kcqOS91VQCg4XBfUdjQyK$$OkJWR3PbMGLNdjjCpLqrb##Loan Type" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=224&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
-    "BTIAO4TE3ms-mY3Hm2i6X$$WqSCbssnK4tNct2DQixoG" : {
-      "id" : "BTIAO4TE3ms-mY3Hm2i6X$$WqSCbssnK4tNct2DQixoG",
-      "component" : "Target",
+    "ZLyJkBAtvtpz1rk6Gt7MK$$5FlZz4AfqUeSMecopElH9" : {
+      "id" : "ZLyJkBAtvtpz1rk6Gt7MK$$5FlZz4AfqUeSMecopElH9",
+      "component" : "Source",
       "metadata" : {
-        "label" : "tbl_all_mortgages",
-        "slug" : "tbl_all_mortgages",
-        "x" : 900,
-        "y" : 500,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "This gem saves the input DataFrame as a Delta table named \"mortgages_all\" in the \"mortgage_demo\" database under the \"bobwelshmer\" user. This could be useful for data persistence and sharing across different Spark applications or for querying the data using SQL."
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "72QUuM2T98XIP6g4hZGae$$4xCBJnx_Z4NOLwhWmAIXz",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "PropID",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Unique identifier for each property in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each property in the dataset.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "City",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The name of the city where the property is located. This column stores values of string data type and provides information about the geographical location of the property.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "State",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "PropertyType",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Specifies the type of property associated with each mortgage. It stores values of string data type, indicating whether the property is a single-family home, multi-family home, condominium, or other type of property. This column provides important information about the characteristics of the properties associated with each mortgage.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Servicer",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The name of the company or organization that services the mortgage loan. This column stores string values and provides information about the entity responsible for managing the loan payments and other related activities.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "ServicerType",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Indicates the type of servicer responsible for managing the mortgage loan. The values in this column are of string data type and provide information about the organization or entity responsible for servicing the loan, such as a bank or mortgage company. This column can be used to track the performance of different types of servicers and their impact on loan status and other metrics.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "LoanType",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Specifies the type of loan associated with each property. It stores values of string data type, indicating the type of loan taken by the property owner. This column provides information about the terms and conditions of the loan, such as interest rates and payment schedules.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "UnPaidBalance",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The outstanding balance on the mortgage loan for a particular property. This column stores numerical values in double data type, indicating the amount of money that the borrower still owes on their mortgage loan. It is an important metric for lenders to assess the risk associated with a particular loan.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "CurrentPropValue",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The current market value of the property associated with the mortgage. This column stores numerical values in double data type, indicating the estimated worth of the property at the time of data collection. It provides an insight into the value of the property and its potential for generating revenue.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "LoanStatus",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Indicates the current status of the loan associated with the property. The values in this column are of string data type and provide information on whether the loan is in good standing, delinquent, or in default. This column is important for tracking the overall health of the mortgage portfolio.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "UPB_to_Value_Ratio",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/tar_all_mortgages"
-      }
-    },
-    "2gL1LRLfPj0GCASqLZrff$$6t2dXNLZdNJk_ubxuhmNU" : {
-      "id" : "2gL1LRLfPj0GCASqLZrff$$6t2dXNLZdNJk_ubxuhmNU",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "tbl_troubled_mortgages",
-        "slug" : "tbl_troubled_mortgages",
-        "x" : 1180,
+        "label" : "mortgage_west_anya",
+        "slug" : "mortgage_west_anya",
+        "x" : 120,
         "y" : 280,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "This gem saves the input DataFrame as a Delta table named \"troubled_mortgages\" in the \"mortgage_demo\" database under the \"bobwelshmer\" user. This could be used for data persistence and sharing across different Spark applications or for downstream analytics and reporting."
+        "isImported" : false
       },
       "ports" : {
-        "inputs" : [ {
-          "id" : "gqPsNtlV07txa56ZxrjmN$$lJMgVXGVN0vNp52I4Q83z",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "PropID",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Unique identifier for each property in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each property in the dataset.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "City",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The name of the city where the property is located. This column stores values of string data type and provides information about the geographical location of the property.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "State",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "PropertyType",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Specifies the type of property associated with each mortgage. It stores values of string data type, indicating whether the property is a single-family home, multi-family home, condominium, or other type of property. This column provides important information about the characteristics of the properties associated with each mortgage.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Servicer",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The name of the company or organization that services the mortgage loan. This column stores string values and provides information about the entity responsible for managing the loan payments and other related activities.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "ServicerType",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Indicates the type of servicer responsible for managing the mortgage loan. The values in this column are of string data type and provide information about the organization or entity responsible for servicing the loan, such as a bank or mortgage company. This column can be used to track the performance of different types of servicers and their impact on loan status and other metrics.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "LoanType",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Specifies the type of loan associated with each property. It stores values of string data type, indicating the type of loan taken by the property owner. This column provides information about the terms and conditions of the loan, such as interest rates and payment schedules.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "UnPaidBalance",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The outstanding balance on the mortgage loan for a particular property. This column stores numerical values in double data type, indicating the amount of money that the borrower still owes on their mortgage loan. It is an important metric for lenders to assess the risk associated with a particular loan.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "CurrentPropValue",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The current market value of the property associated with the mortgage. This column stores numerical values in double data type, indicating the estimated worth of the property at the time of data collection. It provides an insight into the value of the property and its potential for generating revenue.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "LoanStatus",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Indicates the current status of the loan associated with the property. The values in this column are of string data type and provide information on whether the loan is in good standing, delinquent, or in default. This column is important for tracking the overall health of the mortgage portfolio.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "UPB_to_Value_Ratio",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "CSkgKTfeixAks7UOfLSNc$$gplh4lf4SxK9D5bnPeiv8",
+          "slug" : "out"
         } ],
-        "outputs" : [ ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "datasetId" : "datasets/tar_troubled_mortgages"
-      }
-    },
-    "hOXppsb1yhNdDEvHddY5q$$gGXPXzbmLGwEMUmO3gToo" : {
-      "id" : "hOXppsb1yhNdDEvHddY5q$$gGXPXzbmLGwEMUmO3gToo",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "csv_by_state_analysis",
-        "slug" : "csv_by_state_analysis",
-        "x" : 1520,
-        "y" : 120,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "This gem writes the input DataFrame to a CSV file with headers and a comma separator. The output file is saved to a specific location in the Databricks File System (DBFS) and overwrites any existing file with the same name. This could be useful for exporting data for further analysis or sharing with other teams or stakeholders."
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "_KnDRMCrhD5B_hg7PK9e1$$CkimCwsNNOcllk3Ubefoe",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "State",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "prop_count",
-              "type" : "long",
-              "nullable" : false,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "UPB_to_Value_Ratio",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/state_analysis_csv"
+        "datasetId" : "datasets/mortgage_west_anya"
       }
     },
     "J4KACe_tc8QAvbktuvrHE$$gJWKp5QW9QFbf6RvDhewp" : {
@@ -846,7 +611,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Unique identifier for each property in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each property in the dataset.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -855,7 +620,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the city where the property is located. This column stores values of string data type and provides information about the geographical location of the property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -864,16 +629,16 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The state in which the property is located. It stores the two-letter abbreviation of the state name and is of string data type. This column provides information about the geographic location of the property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "PropertyType",
+              "name" : "Property Type",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Specifies the type of property associated with each mortgage. It stores values of string data type, indicating whether the property is a single-family home, multi-family home, condominium, or other type of property. This column provides important information about the characteristics of the properties associated with each mortgage.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -882,52 +647,52 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the company or organization that services the mortgage loan. This column stores string values and provides information about the entity responsible for managing the loan payments and other related activities.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "ServicerType",
+              "name" : "Servicer Type",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the type of servicer responsible for managing the mortgage loan. The values in this column are of string data type and provide information about the organization or entity responsible for servicing the loan, such as a bank or mortgage company. This column can be used to track the performance of different types of servicers and their impact on loan status and other metrics.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "LoanType",
+              "name" : "Loan Type",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Specifies the type of loan associated with each property. It stores values of string data type, indicating the type of loan taken by the property owner. This column provides information about the terms and conditions of the loan, such as interest rates and payment schedules.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "UnPaidBalance",
-              "type" : "double",
+              "name" : "UnPaid Balance",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "The outstanding balance on the mortgage loan for a particular property. This column stores numerical values in double data type, indicating the amount of money that the borrower still owes on their mortgage loan. It is an important metric for lenders to assess the risk associated with a particular loan.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "CurrentPropValue",
-              "type" : "double",
+              "name" : "Current Prop Value",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "The current market value of the property associated with the mortgage. This column stores numerical values in double data type, indicating the estimated worth of the property at the time of data collection. It provides an insight into the value of the property and its potential for generating revenue.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "LoanStatus",
+              "name" : "Loan Status",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the current status of the loan associated with the property. The values in this column are of string data type and provide information on whether the loan is in good standing, delinquent, or in default. This column is important for tracking the overall health of the mortgage portfolio.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -970,7 +735,7 @@
           "target" : "PropertyType",
           "expression" : {
             "format" : "sql",
-            "expression" : "PropertyType"
+            "expression" : "\"Property Type\""
           },
           "description" : ""
         }, {
@@ -984,52 +749,185 @@
           "target" : "ServicerType",
           "expression" : {
             "format" : "sql",
-            "expression" : "ServicerType"
+            "expression" : "Servicer Type"
           },
           "description" : ""
         }, {
           "target" : "LoanType",
           "expression" : {
             "format" : "sql",
-            "expression" : "LoanType"
+            "expression" : "\"Loan Type\""
           },
           "description" : ""
         }, {
           "target" : "UnPaidBalance",
           "expression" : {
             "format" : "sql",
-            "expression" : "UnPaidBalance"
+            "expression" : "\"UnPaid Balance\""
           },
           "description" : ""
         }, {
           "target" : "CurrentPropValue",
           "expression" : {
             "format" : "sql",
-            "expression" : "CurrentPropValue"
+            "expression" : "\"Current Prop Value\""
           },
           "description" : ""
         }, {
           "target" : "LoanStatus",
           "expression" : {
             "format" : "sql",
-            "expression" : "LoanStatus"
+            "expression" : "\"Loan Status\""
           },
           "description" : ""
         }, {
-          "target" : "UPB_to_Value_Ratio",
+          "target" : "UPBtoValueRatio",
           "expression" : {
             "format" : "sql",
-            "expression" : "(UnPaidBalance / CurrentPropValue)"
+            "expression" : "(`UnPaid Balance` / `Current Prop Value`)"
           },
           "description" : ""
         } ],
-        "importString" : "",
+        "importString" : "PropID,PropID\nCity,City\nState,initcap(State)\nPropertyType,Property Type\nServicer,Servicer\nServicerType,Servicer Type\nLoanType,Loan Type\nUnPaidBalance,UnPaid Balance\nCurrentPropValue,Current Prop Value\nLoanStatus,Loan Status\nUPB_to_Value_Ratio,(UnPaidBalance / CurrentPropValue)",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##ServicerType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##LoanStatus", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##CurrentPropValue", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##PropID", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##LoanType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##Servicer", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##City", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##PropertyType", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##State", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##UnPaidBalance" ]
+        "columnsSelector" : [ "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##City", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##Servicer", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##Current Prop Value", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##UnPaid Balance", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##State", "GPli3i2ynwMDiwapJigxr$$EPevQYa7pCNS9FhR5t9Io##PropID" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=224&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "BHvWdx5QZtXEuNWX2fl-Q$$Q95NeJwv29lo97Q4LQszj" : {
+      "id" : "BHvWdx5QZtXEuNWX2fl-Q$$Q95NeJwv29lo97Q4LQszj",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "tbl_all_mortgages_1",
+        "slug" : "tbl_all_mortgages_1",
+        "x" : 860,
+        "y" : 660,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Saves the DataFrame as a Delta table named 'mortgages_all_loandemo' in the 'pipelinehub.anya' database.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Hz8CbeQqT3Ems_JUt_PfV$$QmJWXBJntyQywMkghxPhx",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "PropID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "City",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "State",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PropertyType",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Servicer",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ServicerType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LoanType",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "UnPaidBalance",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CurrentPropValue",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LoanStatus",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "UPBtoValueRatio",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/tbl_all_mortgages"
       }
     },
     "Xac5yWT3TYIwYSO-z0gkP$$2r2d29Sz5-lOdc_byv7DO" : {
@@ -1057,7 +955,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Unique identifier for each property in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each property in the dataset.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1066,7 +964,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the city where the property is located. This column stores values of string data type and provides information about the geographical location of the property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1082,9 +980,9 @@
             }, {
               "name" : "PropertyType",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Specifies the type of property associated with each mortgage. It stores values of string data type, indicating whether the property is a single-family home, multi-family home, condominium, or other type of property. This column provides important information about the characteristics of the properties associated with each mortgage.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1093,7 +991,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the company or organization that services the mortgage loan. This column stores string values and provides information about the entity responsible for managing the loan payments and other related activities.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1102,48 +1000,48 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the type of servicer responsible for managing the mortgage loan. The values in this column are of string data type and provide information about the organization or entity responsible for servicing the loan, such as a bank or mortgage company. This column can be used to track the performance of different types of servicers and their impact on loan status and other metrics.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "LoanType",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Specifies the type of loan associated with each property. It stores values of string data type, indicating the type of loan taken by the property owner. This column provides information about the terms and conditions of the loan, such as interest rates and payment schedules.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "UnPaidBalance",
-              "type" : "double",
-              "nullable" : true,
+              "type" : "string",
+              "nullable" : false,
               "metadata" : {
-                "description" : "The outstanding balance on the mortgage loan for a particular property. This column stores numerical values in double data type, indicating the amount of money that the borrower still owes on their mortgage loan. It is an important metric for lenders to assess the risk associated with a particular loan.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "CurrentPropValue",
-              "type" : "double",
-              "nullable" : true,
+              "type" : "string",
+              "nullable" : false,
               "metadata" : {
-                "description" : "The current market value of the property associated with the mortgage. This column stores numerical values in double data type, indicating the estimated worth of the property at the time of data collection. It provides an insight into the value of the property and its potential for generating revenue.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "LoanStatus",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Indicates the current status of the loan associated with the property. The values in this column are of string data type and provide information on whether the loan is in good standing, delinquent, or in default. This column is important for tracking the overall health of the mortgage portfolio.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "UPB_to_Value_Ratio",
+              "name" : "UPBtoValueRatio",
               "type" : "double",
               "nullable" : true,
               "metadata" : {
@@ -1164,14 +1062,14 @@
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "columnsSelector" : [ "m6x1XVlcTpONq5WjOM0Bp$$aXSKyDewXHXD475Z2IWZ9##UPB_to_Value_Ratio", "m6x1XVlcTpONq5WjOM0Bp$$aXSKyDewXHXD475Z2IWZ9##LoanStatus" ],
+        "columnsSelector" : [ "m6x1XVlcTpONq5WjOM0Bp$$aXSKyDewXHXD475Z2IWZ9##UPBtoValueRatio", "m6x1XVlcTpONq5WjOM0Bp$$aXSKyDewXHXD475Z2IWZ9##LoanStatus" ],
         "condition" : {
           "format" : "sql",
-          "expression" : "UPB_to_Value_Ratio>1 AND LoanStatus IN (\"90\",\"REO\")"
+          "expression" : "UPBtoValueRatio>1 AND LoanStatus IN (\"90\",\"REO\")"
         }
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=12654&path=gems/Filter",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=224&path=gems/Filter",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -1197,10 +1095,10 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "PropID",
-              "type" : "string",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "Unique identifier for each property in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each property in the dataset.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1209,7 +1107,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the city where the property is located. This column stores values of string data type and provides information about the geographical location of the property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1218,16 +1116,16 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The state in which the property is located. It stores the two-letter abbreviation of the state name and is of string data type. This column provides information about the geographic location of the property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "PropertyType",
+              "name" : "Property Type",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Specifies the type of property associated with each mortgage. It stores values of string data type, indicating whether the property is a single-family home, multi-family home, condominium, or other type of property. This column provides important information about the characteristics of the properties associated with each mortgage.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1236,52 +1134,52 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the company or organization that services the mortgage loan. This column stores string values and provides information about the entity responsible for managing the loan payments and other related activities.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "ServicerType",
+              "name" : "Servicer Type",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the type of servicer responsible for managing the mortgage loan. The values in this column are of string data type and provide information about the organization or entity responsible for servicing the loan, such as a bank or mortgage company. This column can be used to track the performance of different types of servicers and their impact on loan status and other metrics.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "LoanType",
+              "name" : "Loan Type",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Specifies the type of loan associated with each property. It stores values of string data type, indicating the type of loan taken by the property owner. This column provides information about the terms and conditions of the loan, such as interest rates and payment schedules.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "UnPaidBalance",
-              "type" : "double",
+              "name" : "UnPaid Balance",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "The outstanding balance on the mortgage loan for a particular property. This column stores numerical values in double data type, indicating the amount of money that the borrower still owes on their mortgage loan. It is an important metric for lenders to assess the risk associated with a particular loan.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "CurrentPropValue",
-              "type" : "double",
+              "name" : "Current Prop Value",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "The current market value of the property associated with the mortgage. This column stores numerical values in double data type, indicating the estimated worth of the property at the time of data collection. It provides an insight into the value of the property and its potential for generating revenue.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "LoanStatus",
+              "name" : "Loan Status",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the current status of the loan associated with the property. The values in this column are of string data type and provide information on whether the loan is in good standing, delinquent, or in default. This column is important for tracking the overall health of the mortgage portfolio.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1298,7 +1196,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Unique identifier for each mortgage account. It stores values of string data type and provides a way to uniquely identify each mortgage account in the dataset.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1307,7 +1205,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the city where the property associated with the mortgage is located. This column stores values of string data type and provides information about the geographical location of the property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1325,7 +1223,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the type of property associated with each mortgage account. It stores values of string data type, providing information about the nature of the property, such as whether it is a single-family home, a condominium, or a commercial property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1334,7 +1232,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the company or organization responsible for servicing the mortgage loan. This column stores string values and provides information about the entity responsible for collecting payments, managing the loan, and handling any issues related to the mortgage.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1343,7 +1241,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "This column represents the type of servicer responsible for managing the mortgage loan. It stores categorical values in string data type, indicating the type of organization that services the loan, such as a bank or a mortgage company. This information can be useful in understanding the management and servicing of the mortgage loan.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1352,25 +1250,25 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the type of loan taken by the borrower. It stores categorical values in string data type, providing information about the terms and conditions of the loan, such as fixed or adjustable interest rates, loan duration, and payment schedule.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "UnPaidBalance",
-              "type" : "double",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "The outstanding balance on a mortgage loan. This column stores the monetary value of the remaining balance on a mortgage loan that has not yet been paid off. The values in this column are of string data type and represent the amount of money owed by the borrower to the lender.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "CurrentPropValue",
-              "type" : "double",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
-                "description" : "This column represents the current market value of the property associated with each mortgage account. It stores numerical values in string data type, indicating the estimated worth of the property at the time of data collection. This value is subject to change over time due to fluctuations in the real estate market.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1400,7 +1298,7 @@
         "allowMissingColumns" : false
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=12654&path=gems/SetOperation",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=224&path=gems/SetOperation",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -1429,7 +1327,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Unique identifier for each property in the dataset. It stores alphanumeric values in string data type, providing a way to uniquely identify each property in the dataset.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1438,7 +1336,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the city where the property is located. This column stores values of string data type and provides information about the geographical location of the property.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1454,9 +1352,9 @@
             }, {
               "name" : "PropertyType",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Specifies the type of property associated with each mortgage. It stores values of string data type, indicating whether the property is a single-family home, multi-family home, condominium, or other type of property. This column provides important information about the characteristics of the properties associated with each mortgage.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1465,7 +1363,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the company or organization that services the mortgage loan. This column stores string values and provides information about the entity responsible for managing the loan payments and other related activities.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1474,48 +1372,48 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Indicates the type of servicer responsible for managing the mortgage loan. The values in this column are of string data type and provide information about the organization or entity responsible for servicing the loan, such as a bank or mortgage company. This column can be used to track the performance of different types of servicers and their impact on loan status and other metrics.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "LoanType",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Specifies the type of loan associated with each property. It stores values of string data type, indicating the type of loan taken by the property owner. This column provides information about the terms and conditions of the loan, such as interest rates and payment schedules.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "UnPaidBalance",
-              "type" : "double",
-              "nullable" : true,
+              "type" : "string",
+              "nullable" : false,
               "metadata" : {
-                "description" : "The outstanding balance on the mortgage loan for a particular property. This column stores numerical values in double data type, indicating the amount of money that the borrower still owes on their mortgage loan. It is an important metric for lenders to assess the risk associated with a particular loan.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "CurrentPropValue",
-              "type" : "double",
-              "nullable" : true,
+              "type" : "string",
+              "nullable" : false,
               "metadata" : {
-                "description" : "The current market value of the property associated with the mortgage. This column stores numerical values in double data type, indicating the estimated worth of the property at the time of data collection. It provides an insight into the value of the property and its potential for generating revenue.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "LoanStatus",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "Indicates the current status of the loan associated with the property. The values in this column are of string data type and provide information on whether the loan is in good standing, delinquent, or in default. This column is important for tracking the overall health of the mortgage portfolio.",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "UPB_to_Value_Ratio",
+              "name" : "UPBtoValueRatio",
               "type" : "double",
               "nullable" : true,
               "metadata" : {
@@ -1550,7 +1448,7 @@
           "target" : "UPB_to_Value_Ratio",
           "expression" : {
             "format" : "sql",
-            "expression" : "avg(UPB_to_Value_Ratio)"
+            "expression" : "avg(UPBtoValueRatio)"
           },
           "description" : "",
           "_row_id" : null
@@ -1559,7 +1457,7 @@
         "pivotColumn" : null,
         "pivotValues" : [ ],
         "activeTab" : "aggregate",
-        "columnsSelector" : [ "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##UPB_to_Value_Ratio", "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##State", "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##PropID" ],
+        "columnsSelector" : [ "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##State", "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##UPBtoValueRatio", "pLOrTpxg_HWt9ZcgX3Ql6$$FUs_v0Y-iO52AOWoViL5H##PropID" ],
         "groupBy" : [ {
           "target" : "State",
           "expression" : {
@@ -1571,28 +1469,27 @@
         } ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=12654&path=gems/Aggregate",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.30&projectSubscriptionProjectId=224&path=gems/Aggregate",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
-    "zyoB6ezFKyy2O8-m5hJvG$$bIf2_Q-tpYvZTjzMwyryh" : {
-      "id" : "zyoB6ezFKyy2O8-m5hJvG$$bIf2_Q-tpYvZTjzMwyryh",
+    "jz5ofC_KZQA_guJEs76kR$$x3TD35G9rQFYURiVQKhpG" : {
+      "id" : "jz5ofC_KZQA_guJEs76kR$$x3TD35G9rQFYURiVQKhpG",
       "component" : "Source",
       "metadata" : {
-        "label" : "csv_mortgage_east",
-        "slug" : "csv_mortgage_east",
+        "label" : "mortgage_east_loandemo",
+        "slug" : "mortgage_east_loandemo",
         "x" : 320,
-        "y" : 220,
+        "y" : 60,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "This gem reads in a CSV file containing mortgage data for properties in the eastern region of the United States. It specifies the schema of the data and sets options for reading in the file, such as the header and separator. This data can be used for analysis and modeling to gain insights into the mortgage market in the eastern region."
+        "isImported" : false
       },
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "_tUYWfc_JdpLPSS2GrE7y$$qyetxMr4IlCCNTrvkMFq-",
+          "id" : "cUTI_JAcfbipT2EPITgwE$$Z-GNNIfoaZn7qdXYzhuhV",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
@@ -1600,35 +1497,140 @@
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "datasetId" : "datasets/mortgage_east"
+        "datasetId" : "datasets/mortgage_east_loandemo"
       }
     },
-    "4kqI7vslqwZUkg8g5eiyi$$IuxlRqsVksOhU3snnAewR" : {
-      "id" : "4kqI7vslqwZUkg8g5eiyi$$IuxlRqsVksOhU3snnAewR",
-      "component" : "Source",
+    "xxAdWtG6vQZ4CsnyDb_pa$$Zl0jf15I8ql6TfVmhpifD" : {
+      "id" : "xxAdWtG6vQZ4CsnyDb_pa$$Zl0jf15I8ql6TfVmhpifD",
+      "component" : "Target",
       "metadata" : {
-        "label" : "csv_mortgage_west",
-        "slug" : "csv_mortgage_west",
-        "x" : 120,
-        "y" : 420,
+        "label" : "tbl_troubled_mortgages_1",
+        "slug" : "tbl_troubled_mortgages_1",
+        "x" : 1140,
+        "y" : 340,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "This gem reads in a CSV file containing mortgage data for the western region of the United States. It specifies the schema of the data and sets options for reading in the file. This could be used to load and analyze mortgage data for the western region, providing insights into the housing market and mortgage trends in the area."
+        "comment" : "Saves a DataFrame as a Delta table named 'troubled_mortgages_loandemo' in the 'anya' database under the 'pipelinehub' schema.",
+        "autoUpdateComment" : true
       },
       "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "du2xrdKnRybrrvOjZxmF0$$XxzDtzgsC3ECLIamUQMux",
-          "slug" : "out"
+        "inputs" : [ {
+          "id" : "oQ19n5gKMeQq_mNLQNddU$$Lzpit8vHfiFpYpeaAkS8B",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "PropID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "City",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "State",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PropertyType",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Servicer",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ServicerType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LoanType",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "UnPaidBalance",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CurrentPropValue",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LoanStatus",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "UPBtoValueRatio",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
         } ],
+        "outputs" : [ ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "datasetId" : "datasets/mortgage_west"
+        "datasetId" : "datasets/tbl_troubled_mortgages"
       }
     }
   },
